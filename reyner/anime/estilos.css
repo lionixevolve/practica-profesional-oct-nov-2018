@@ -3,3 +3,30 @@
   font-family: fantasy;
   background-color: #527FB4;
 }
+
+@media (min-width: 576px) {
+  .card{
+    height: 600px
+  }
+}
+
+
+@media (min-width: 768px) {
+  .card{
+    height: 475px
+  }
+}
+
+
+@media (min-width: 992px) {
+  .card{
+    height: 475px
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .card{
+    height: 475px
+  }
+}
