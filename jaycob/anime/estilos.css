@@ -1,26 +1,23 @@
 
-.onedivtorulethemall {
+body {
 
   background-image: url("Images/cl.png");
-   /* opacity: 0.5; */
+   /* */
 
 }
 footer{
   background: #F2F2F2;
 
 }
-#re, #d, #mono, #fate, #gosick, #aldo{
+#re, #d, #mono, #fate, #gosick, #aldo #help{
 
   background: white;
 
 }
-h1{
+h1, h2{
   text-align: center;
-
-}
-H2{
-  text-align:center;
   color: #fff;
 }
-style{
+h3{
+  text-align: center;
 }
