@@ -9,4 +9,13 @@ h3 {       background:#c0392b;     color:#fff; }
 h4 {       background:#c0392b;     color:#fff; }
 aside{     background:#c0392b;     color:#fff; }
 footer{     background:#c0392b;     color:#fff;  }﻿
-img { text-align: center;}
+img {
+    vertical-align: center;
+    border-style: none;
+}
+
+
+@media (min-width: 100px ) and (max-width: 419px)
+{
+  #imagennaruto {aling-self: center;}
+}
