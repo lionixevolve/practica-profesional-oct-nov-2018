@@ -8,6 +8,7 @@ h2 {       background:#c0392b;     color:#fff; }
 h3 {       }
 h4 {       background:#c0392b;     color:#fff; }
 h5 {       font-size: 40px;    color:#fff;     }
+h6 {    font-size: 60px    }
 aside{     background:#c0392b;     color:#fff; }
 footer{     background:#c0392b;     color:#fff;  }﻿
 img {
@@ -19,7 +20,7 @@ img {
 
 @media (min-width: 100px ) and (max-width: 419px)
 {
-.carousel-inner {  width: 100px; height: 200px; }
+.carousel-inner {  width: 50px; height: 200px; }
 }
 
 @media (max-width: 575.98px)
