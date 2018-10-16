@@ -1,27 +1,23 @@
 
-body{
-/*  background: url("Images/cl.png");
-}
-div {
-  /*background-color: gray; opacity: 0.5;
-*/
+body {
+
+  background-image: url("Images/cl.png");
+   /* */
+
 }
 footer{
   background: #F2F2F2;
 
 }
-#re, #d, #mono, #fate, #gosick, #aldo{
+#re, #d, #mono, #fate, #gosick, #aldo #help{
 
   background: white;
-  opacity: 0.9;
-}
-h1{
-  text-align: center;
 
 }
-H2{
-  text-align:center;
+h1, h2{
+  text-align: center;
   color: #fff;
 }
-style{
+h3{
+  text-align: center;
 }
