@@ -27,12 +27,3 @@ h3{
    text-align: center;
    opacity: 0.9;
  }
- .opacity{
-   background-color:rgb(255,0,0);
-   opacity:0.9; /* Opacidad 60% */
-   width:200px;
-   height:70px;
-}
-#carouselExampleControls{
-  align-items: center;
-}
