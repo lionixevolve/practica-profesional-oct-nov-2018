@@ -1,10 +1,9 @@
 
-body{
-/*  background: url("Images/cl.png");
-}
-div {
-  /*background-color: gray; opacity: 0.5;
-*/
+.onedivtorulethemall {
+
+  background-image: url("Images/cl.png");
+   /* opacity: 0.5; */
+
 }
 footer{
   background: #F2F2F2;
@@ -13,7 +12,7 @@ footer{
 #re, #d, #mono, #fate, #gosick, #aldo{
 
   background: white;
-  opacity: 0.9;
+
 }
 h1{
   text-align: center;
