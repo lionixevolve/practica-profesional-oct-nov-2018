@@ -3,9 +3,9 @@
   font-family: fantasy;
   background-color: #527FB4;
 }
-@media (min-width: 100px) and (max-width: 575.98px){
+@media (min-width: 100px) and (max-width: 419.98px){
   .shadow{
-    height: 600px
+    height: 480px
   }
 
   #ImgFondo{
@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 420px) and (max-width: 767.98px){
   .shadow{
     height: 600px
   }
