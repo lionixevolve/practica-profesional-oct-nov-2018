@@ -1,7 +1,7 @@
 
 body {
 
-background-image: url(Images/cl.png);
+background-image: url(images/cl.png);
    /* */
 
 }
@@ -10,7 +10,7 @@ footer{
 
 }
 #re, #d, #mono, #fate, #gosick, #aldo, #help{
-  background-image: url(Images/fondo.png);
+  background-image: url(images/fondo.png);
 }
 h1, h2{
   text-align: center;
