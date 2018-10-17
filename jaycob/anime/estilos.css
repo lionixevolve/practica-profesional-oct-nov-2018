@@ -1,24 +1,18 @@
 
-footer{
-  background: #F2F2F2;
-
+body {
+background-image: url(Images/cl.png);
 }
-#re, #d, #mono, #fate, #gosick, #aldo, #help{
 
-
+footer, #re, #d, #mono, #fate, #gosick, #aldo, #help{
+  background-image: url(Images/fondo.png)
 }
 h1, h2{
   text-align: center;
-
-
+  color: white;
 }
 h3{
   text-align: center;
 }
- #help{
-   text-align: center;
-   
- }
  img{
            width:600px;
            height:400px;
