@@ -3,49 +3,16 @@ header{     background:#c0392b;    color:#fff; }
 body{
   background:  	#FFFFFF;
 }
+.jumbotron {       background:#c0392b;     color:#fff; }
 h1 { font-size: 80px    }
 h2 {       background:#c0392b;     color:#fff; }
 h3 {       }
 h4 {       background:#c0392b;     color:#fff; }
 h5 {       font-size: 40px;    color:#fff;     }
+h6 {    font-size: 60px    }
 aside{     background:#c0392b;     color:#fff; }
 footer{     background:#c0392b;     color:#fff;  }﻿
 img {
     vertical-align: center;
     border-style: none;
-}
-
-
-
-@media (min-width: 100px ) and (max-width: 419px)
-{
-.carousel-inner {  width: 100px; height: 200px; }
-}
-
-@media (max-width: 575.98px)
-{
-.carousel-inner {  width: 500px; height: 400px; }
-}
-
-
-@media (min-width: 576px) and (max-width: 767.98px)
-{
-.carousel-inner {  width: 800px; height: 300px; }
-}
-
-
-@media (min-width: 768px) and (max-width: 991.98px)
-{
-.carousel-inner {  width: 900px; height: 300px; }
-}
-
-
-@media (min-width: 992px) and (max-width: 1199.98px)
-{
-.carousel-inner { width: 1100px; height: 450px; }
-}
-
-@media (min-width: 1200px)
-{
-.carousel-inner { width: 1319px; height: 500px;
 }
