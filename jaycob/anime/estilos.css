@@ -9,8 +9,12 @@ footer{
   background: #F2F2F2;
 
 }
-#re, #d, #mono, #fate, #gosick, #aldo, #help{
+#re, #d, #mono, #fate, #gosick, #aldo, #help, #soul, #ghost{
   background-image: url(images/fondo.png);
+}
+
+#h2{
+  font-size: 30px;
 }
 h1, h2{
   text-align: center;
@@ -30,4 +34,7 @@ h3{
 }
 p {
   text-align: center;
+}
+button{
+  margin-bottom: 30px;
 }

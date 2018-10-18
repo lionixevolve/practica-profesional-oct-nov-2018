@@ -11,16 +11,30 @@
   </head>
   <body>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <a class="navbar-brand" href="#">AnimePY</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
 
-          <div class=" col-xs-12 ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#accion">Accíon</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#misterio">Misterio</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class=" col-xs-12 " id="inicio">
             <h1>AnimePY</h1>
-            <h2>Diviertete con nostrotros</h2>
+            <h2>Diviértete con nosotros</h2>
             <div class="">
               <center>
                 <img class="img-fluid" src="images/welcome.png" alt="200">
@@ -53,64 +67,145 @@
             <h2 id="lista"> <center>Lista recomendada<center></h2><br><br>
           </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-6" id="fate">
-              <center>
-                <img class="img-fluid" src="https://i.ytimg.com/vi/1ErwgLxBNL0/maxresdefault.jpg">
-              </center>
+        <div class="row" id="accion">
+          <div class="col-md-12">
+            <h2>Accíon</h2>
+
+            </div>
+          <div class="col-xs-12 col-md-6 col-lg-4" id="fate">
+            <a href="fate/index.html"><img class="img-fluid" src="https://i.ytimg.com/vi/1ErwgLxBNL0/maxresdefault.jpg"></a>
+
             <h3>Fate/Stay Night</h3>
             <h4>Argumento</h4>
             <p align="left"><br>Shirō Emiya perdió a su familia hace diez años en un enorme incendio que consumió gran parte de la ciudad de Fuyuki.
-              Atrapado entre las llamas, se da por vencido y acepta su propia muerte, pero un enigmático hombre lo encuentra y lo ayuda. </p>
-            <a class="btn btn-primary" href="fate" role="button">Detalles</a>
+              Atrapado entre las llamas, se da por vencido y acepta su propia muerte, pero un enigmático hombre lo encuentra y lo ayuda. Este hombre, Kiritsugu Emiya, lo adopta y le revela su identidad como mago. Kiritsugu también le cuenta a Shirō su sueño fallido de ser un héroe justiciero.
+            </p>
+            <button type="button" class="btn btn-dark" href="fate/index.htmlte">Detalles</button>
+
           </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-6 " id="aldo">
-                <img class="img-fluid" src="https://c.wallhere.com/photos/82/47/Aldnoah_Zero_Slaine_Troyard_Asseylum_Vers_Allusia_Kaizuka_Inaho-94615.jpg!d">
+          <div class="col-xs-12 col-md-6 col-lg-4 " id="aldo">
+            <a href="index.html"><img class="img-fluid" src="https://c.wallhere.com/photos/82/47/Aldnoah_Zero_Slaine_Troyard_Asseylum_Vers_Allusia_Kaizuka_Inaho-94615.jpg!d"></a>
             <h3>Aldonah zero</h3>
             <h4>Argumento</h4>
-            <p align="left"><br>Un estudiante de bachillerato de la Tierra.
+            <p><br>Un estudiante de bachillerato de la Tierra.
               Tras la muerte de sus padres, ha estado viviendo al lado de su hermana mayor, Yuki, quien es militar.
               Es caracterizado por su comportamiento no emotivo y estoico, y es alguien capaz de idear estrategias que ayudan a derrotar a los Caballeros de Marte, aún en la más fiera batalla.
               Inaho tiene un peculiar interés en las diversas formas que existen para preparar huevos.</p>
               <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
           </div>
 
-
-          <div class="col-xs-12 col-md-6 col-lg-6" id="mono">
-                <img class="img-fluid"  src="https://lh3.googleusercontent.com/-ymWf_6nfZZ0/WeMhA4jBWcI/AAAAAAAB2uc/FbbtO2BQcekLLWEMan7B0b8QzmbkIL8gwCJoC/w1920-h1080/Blank%252B_7997e28c1ef6c1f6eb66e64ff7186c9c.jpg" >
-            <h3>Monogatari series</h3>
-            <h4>Argumento</h4>
-            <p align="left"><br>La serie de Monogatari se centra en Koyomi Araragi, un estudiante de tercer año de instituto que es ahora casi humano después de haber sido vampiro por un tiempo. </p>
-            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-6" id="gosick">
-                <img class="img-fluid" src="https://images.alphacoders.com/226/thumb-1920-226483.jpg"  >
-            <h3>Gosick</h3>
-            <h4>Argumento</h4>
-            <p align="left"><br> La serie se centra principalmente en Kazuya y Victorique que tratan de resolver diferentes casos misteriosos.</p>
-            <br>
-            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
-          </div>
-
-
-            <div class="col-xs-12 col-md-6 col-lg-6" id="re">
-                  <img class="img-fluid" src="http://wallpapersmug.com/download/1920x1200/5428a2/anime-girl-altair.jpg" >
+            <div class="col-xs-12 col-md-6 col-lg-4" id="re">
+              <a href="index.html">
+                <img href="fate" class="img-fluid" src="http://wallpapersmug.com/download/1920x1200/5428a2/anime-girl-altair.jpg" >
+              </a>
               <h3>Re:Creators</h3>
               <h4>Argumento</h4>
 
               <br>
-              <p align="left">La serie es acerca de un estudiante de secundaria llamado Sōta Mizushino que se ve involucrado en una batalla entre varios personajes de manga, anime, y videojuegos que de alguna manera aparecieron en el mundo real.</p>
+              <p >La serie es acerca de un estudiante de secundaria llamado Sōta Mizushino que se ve involucrado en una batalla entre varios personajes de manga, anime, y videojuegos que de alguna manera aparecieron en el mundo real.</p>
                 <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
             </div>
 
-            <div class="col-xs-12 col-md-6 col-lg-6" id="d">
-                  <img class="img-fluid"  src="https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080">
-            <h3>D.Gray-man</h3>
+            <div class="col-xs-12 col-md-6 col-lg-4" id="d">
+              <a href="index.html">
+              <img href="fate" class="img-fluid"  src="https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080">
+              </a>
+              <h3>D.Gray-man</h3>
+              <h4>Argumento</h4>
+              <br>
+              <p >La serie se centra en un final imaginario del siglo XIX en Europa, donde la Congregación de la Sombra lucha con el fin de detener al Conde del Milenio, quien tiene la intención de destruir la humanidad con su ejército de akumas y ryus, armas creadas a partir de las almas de los muertos cuando un familiar </p>
+              <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4" id="ghost">
+              <a href="index.html">
+              <img href="fate" class="img-fluid"  src="https://www.imgbase.info/images/safe-wallpapers/anime/ghost_in_the_shell/25930_ghost_in_the_shell.jpg">
+              </a>
+              <h3>Ghost in the Shell </h3>
+              <h4>Argumento</h4>
+              <br>
+              <p>mbientada en el siglo XXI, Ghost in the Shell se presenta en una primera lectura como un thriller futurista de espionaje, al narrar las misiones de Motoko Kusanagi, la mayor a cargo de las operaciones encubiertas de la Sección Policial de Seguridad Pública 9, o simplemente Sección 9, especializada en crímenes tecnológicos. La misma Kusanagi es un cíborg, poseyendo un cuerpo artificial, lo que le permite ser capaz de realizar hazañas sobrehumanas especialmente requeridas por su labor.</p>
+              <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4" id="soul">
+              <a href="index.html">
+              <img href="fate" class="img-fluid"  src="https://vignette.wikia.nocookie.net/souleater/images/8/82/Soul-Eater-Wallpaper-Background-Windows-Anime.jpg/revision/latest?cb=20131231175931">
+              </a>
+              <h3>Soul Eater </h3>
+              <h4>Argumento</h4>
+              <br>
+              <p>Los técnicos junto a su compañero arma tienen que recolectar 99 almas de Kishins, las cuales son almas corrompida por el mal o la locura y que están en la lista de shinigami-sama, y el alma de una bruja. Así, las armas y técnicos pasen a ser de la categoría Death Scythe, que les permite obtener poderes y habilidades nuevos.
+              </p>
+              <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+            </div>
+        </div>
+
+        <div class="row" id="misterio">
+          <div class="col-md-12">
+            <h2>Misterio</h2>
+
+            </div>
+          <div class="col-xs-12 col-md-6 col-lg-4" id="mono">
+            <a href="index.html"><img class="img-fluid"  src="https://lh3.googleusercontent.com/-ymWf_6nfZZ0/WeMhA4jBWcI/AAAAAAAB2uc/FbbtO2BQcekLLWEMan7B0b8QzmbkIL8gwCJoC/w1920-h1080/Blank%252B_7997e28c1ef6c1f6eb66e64ff7186c9c.jpg"></a>
+            <h3>Monogatari series</h3>
             <h4>Argumento</h4>
+            <p><br>La serie de Monogatari se centra en Koyomi Araragi, un estudiante de tercer año de instituto que es ahora casi humano después de haber sido vampiro por un tiempo. </p>
+            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+            <a href="index.html">
+            <img class="img-fluid" src="https://images.alphacoders.com/226/thumb-1920-226483.jpg"  >
+            </a>
+            <h3>Gosick</h3>
+            <h4>Argumento</h4>
+            <p><br> La serie se centra principalmente en Kazuya y Victorique que tratan de resolver diferentes casos misteriosos.</p>
             <br>
-            <p align="left">La serie se centra en un final imaginario del siglo XIX en Europa, donde la Congregación de la Sombra lucha con el fin de detener al Conde del Milenio, quien tiene la intención de destruir la humanidad con su ejército de akumas y ryus, armas creadas a partir de las almas de los muertos cuando un familiar </p>
+            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+            <a href="index.html">
+            <img class="img-fluid" src="http://getwallpapers.com/wallpaper/full/3/b/1/182671.jpg"  >
+            </a>
+            <h3>Durarara</h3>
+            <h4>Argumento</h4>
+            <br><p>Mikado es testigo de una leyenda urbana en su primer día en la ciudad: el "Jinete negro", quien supuestamente es el conductor sin cabeza de una motocicleta de color negro. </p>
+            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+            <a href="index.html">
+            <img class="img-fluid" src="https://images.alphacoders.com/735/thumb-1920-735429.png"  >
+            </a>
+            <h3>Ocultic;Nine</h3>
+            <h4>Argumento</h4>
+            <br><p>Occultic;Nine se centra más, como su propio nombre indica, en el mundo de lo oculto y lo paranormal, contándonos las historias de nueve personas a lo largo y ancho del mundo que experimentan este tipo de sucesos.
+            </p>
+            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+            <a href="index.html">
+            <img class="img-fluid" src="http://images6.fanpop.com/image/photos/33500000/Hyouka-hyouka-33509415-1920-1080.jpg"  >
+            </a>
+            <h3>Hyouka</h3>
+            <h4>Argumento</h4>
+            <br><p>más que el club es de literatura clásica, Houtarou y los otros miembros del club se dedican a resolver cualquier misterio que surja dentro o fuera de su escuela. Houtarou es un chico perezoso, que prefiere no hacer nada para "ahorrar energías", pero Chitanda Eru (miembro del club de Literatura Clásica) lo obligará a que resuelva todos los enigmas y preguntas que se le presenten.
+            </p>
+            <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+            <a href="index.html">
+            <img class="img-fluid" src="https://wallpapertag.com/wallpaper/full/a/c/8/133143-full-size-bungou-stray-dogs-wallpaper-1920x1080.jpg"  >
+            </a>
+            <h3>Bungou Stray Dogs </h3>
+            <h4>Argumento</h4>
+            <br><p>Doppo Kunikida, forman parte de una agencia de detectives especial; una agencia de detectives cuyos miembros poseen diversos poderes sobrenaturales y hacen frente a los casos que son muy peligrosos o difíciles para la policía o el ejército. Atsushi, además, se entera de que los dos hombres están tras la pista de un tigre que ha aparecido en la zona recientemente, al mismo tiempo que él llegó a la ciudad.
+            </p>
             <button type="button" class="btn btn-dark" href="" disabled>Detalles</button>
           </div>
         </div>
@@ -121,12 +216,12 @@
   <footer class="page-footer font-small teal pt-4">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase font-weight-bold">Proximaente</h5>
+        <div class="col-md-6 ">
+          <h5 class="text-uppercase font-weight-bold">Próximamente</h5>
           <p>Manga, Anime y comics</p>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-6 mb-md-0 mb-3">
+        <div class="col-md-6">
           <h5 class="text-uppercase font-weight-bold">Pagina Anime</h5>
           <p>Los estamos esperando </p>
 
