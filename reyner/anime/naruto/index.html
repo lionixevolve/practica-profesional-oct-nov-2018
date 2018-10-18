@@ -52,37 +52,41 @@
       <hr>
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <h4><span class="fi-eye" title="eye" aria-hidden="true"> ¿Has visto Naruto Shippuden?</span></h4>
           <div class="row">
-            <div class="col-1">
-              <a id="btn-si" class="btn btn-primary ml-2 collapse multi-collapse show si" data-toggle="collapse" href=".no" role="button" aria-expanded="false" aria-controls="collapseExample">Si</a>
+            <div class="col-7">
+              <h5><span class="fi-eye" title="eye" aria-hidden="true"> ¿Has visto Naruto Shippuden?</span></h5>
             </div>
-            <div class="col-1">
-              <a id="btn-no" class="btn btn-primary ml-4 collapse multi-collapse show no" data-toggle="collapse" href=".si" role="button" aria-expanded="false" aria-controls="collapseExample">No</a>
+            <div class="col-5 btn-group" role="group">
+              <a id="btn-si" class="btn-sm btn-secondary ml-2 text-center" data-toggle="collapse" href="#lista-si" role="button" aria-expanded="false" aria-controls="collapseExample">Si</a>
+              <a id="btn-no" class="btn-sm btn-secondary ml-4 text-center" data-toggle="collapse" href="#lista-no" role="button" aria-expanded="false" aria-controls="collapseExample">No</a>
             </div>
           </div>
         </div>
-        <div id="lista-si" class="col-md-6 col-sm-12 collapse multi-collapse no">
-          <h5>Si han visto Naruto Shippuden</h5>
-          <ul>
+        <hr>
+        <div id="lista-si" class="col-md-6 col-sm-12 collapse multi-collapse card mb-4 border-secondary text-secondary">
+          <h5 class="mt-2">Si han visto Naruto Shippuden</h5>
+          <ul class="card-text">
             <li> Jesus </li>
             <li> Jaycob </li>
             <li> Reyner </li>
           </ul>
+          <hr class="border-secondary">
           <h5>No han visto Naruto Shippuden</h5>
-          <ul>
+          <ul class="card-text mb-2">
             <li> Diana </li>
         </div>
-        <div id="lista-no" class="col-md-6 col-sm-12 collapse multi-collapse si">
-          <h4>Si han visto Naruto Shippuden</h4>
-          <ul>
+        <div id="lista-no" class="col-md-6 col-sm-12 collapse multi-collapse card mb-4 border-secondary text-secondary">
+          <h4 class="mt-2">Si han visto Naruto Shippuden</h4>
+          <ul class="card-text">
             <li> Jesus </li>
             <li> Jaycob </li>
           </ul>
+          <hr class="border-secondary">
           <h4>No han visto Naruto Shippuden</h4>
-          <ul>
+          <ul class="card-text">
             <li> Reyner </li>
-            <li> Diana </li>
+            <li class="mb-2"> Diana </li>
+          </ul>
         </div>
       </div>
     </div>
