@@ -14,12 +14,12 @@ footer{
 }
 
 #h2{
-  font-size: 60px;
+
   background-color: black;
   margin-top: 50px
 }
-#lol, #ar, #per{
-    margin-top: 50px
+#ar{
+  margin: 10px;
 
 }
 h1, h2{
