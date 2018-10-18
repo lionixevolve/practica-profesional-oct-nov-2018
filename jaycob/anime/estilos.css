@@ -16,6 +16,11 @@ footer{
 #h2{
   font-size: 60px;
   background-color: black;
+  margin-top: 50px
+}
+#lol, #ar, #per{
+    margin-top: 50px
+
 }
 h1, h2{
   text-align: center;
