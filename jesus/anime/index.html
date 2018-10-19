@@ -9,34 +9,83 @@
   <meta name="viewport" content="width=device-witdth, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos.css">
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+          ar scroll = new SmoothScroll('a[href*="#"]', {
+
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+
+      // Speed & Easing
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+      offset: function (anchor, toggle) {
+        if (toggle.classList.closest('.my-header-nav')) {
+          return 25;
+        } else {
+          return 50;
+        }
+
+      },
+      easing: 'easeInOutCubic',
+      customEasing: function (time) {
+
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      updateURL: true,
+      popstate: true,
+      emitEvents: true
+      });
+  </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <header>
-    <div class="container">
-      <div class="page-header">
-        <h6> Animeteca  </h6>
-      </div>
-    </div>
+
+    <div class="container-fluid navbar-fixed-top" id="divNav">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #c0392b;">
+              <a class="navbar-brand" href=".">Animeteca</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#animes">Animes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#estrenos">Estrenos</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+</div>
   </header>
+<br>
+<br>
 
 
 
-  <ul class="nav nav-tabs">
+<!--  <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" href=".">Inicio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="naruto">Favoritos</a>
+      <a class="nav-link active" href="#estrenos">Estrenos</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Estrenos</a>
-    </li>
-  </ul>
+  </ul> -->
 
   <br>
-
-
+<div id="inicio">
+<div id="carouselbotromp">
 <div class="container-fluid hidden-xs hidden-sm">
 <div id="carouselExampleSlidesOnly"  class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -84,8 +133,9 @@
     <section class="main row">
    <div class="jumbotron col-xs-12 col-sm-12 col-md-12 col-lg-7">
       <h1>Okaeri!</h1>
-      <p> El anime se conoce como las series animadas que son producidas en Japon, estas series abarcan muchos generos y hay un sin fin de historias, aventurate a conocer increibles historias! </p>
-      <p> Si deseas conocer mas dale al siguiente boton:  </p>
+      <p> Anime se le conoce como las series animadas que son producidas en Japón, estas series abarcan muchos
+géneros y hay un sin fin de historias, ¡Aventurate a conocer increíbles historias! </p>
+      <p> Si deseas conocer más dale al siguiente botón :  </p>
       <br>
       <p><a href="https://es.wikipedia.org/wiki/Anime" class="btn btn-primary btn-lg">Leer mas</a> </p>
       </div>
@@ -96,12 +146,16 @@
     </div>
   </section>
 </div>
-
+</div>
+</div>
 <br>
 <br>
 <br>
 
-  <div class="container-fluid">
+
+
+<div data-spy="scroll" data-target="#NavDinamico" data-offset="0">
+  <div class="container-fluid" id="animes">
       <section class="main row">
          <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
            <h2 class="text-center"> Animes: </h2>
@@ -131,6 +185,7 @@
                     convertirse en Hokage, líder de su aldea, con el propósito de ser reconocido como alguien
                     importante dentro de la aldea y entre sus compañeros.
                    </p>
+                   <br>
                    <a href="naruto"><button class="form-control bg-info text-white">Ver </button> </a>
                 </div>
 
@@ -162,6 +217,7 @@
                       paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y
                        naturaleza desconocidos, los «Ángeles», utilizando para ello mechas humanoides llamados «EVA».
                         </p>
+                        <br>
                         <button class="form-control bg-info text-white">Ver </button>
                       </article>
                     </div>
@@ -198,6 +254,7 @@
                                 participa en su primer torneo. Sin embargo, son derrotados por el equipo favorito del campeonato, el mismo equipo al que pertenece
                                 Tobio Kageyama, un habilidoso joven que es apodado "El rey de la cancha".
                              </p>
+                             <br>
                              <button class="form-control bg-info text-white">Ver </button>
                            </article>
                          </div>
@@ -215,6 +272,8 @@
                                <p></p>
                                <div class="container-fluid">
                               <br>
+                               <br>
+                               <br>
                                <br>
                                <img class="img-fluid" src="https://vignette.wikia.nocookie.net/nanatsu-no-taizai/images/c/c9/Logo.png/revision/latest?cb=20130802085855" width="400" height="200">
                                <br>
@@ -237,6 +296,7 @@
                                      decide buscar a los otros restantes junto a Meliodas y Hawk, que se transportan sobre el lomo de la madre de Hawk, para así encontrar
                                      a los restantes miembros de Los Siete Pecados Capitales.
                                   </p>
+                                  <br>
                                   <button class="form-control bg-info text-white">Ver </button>
                                 </article>
                               </div>
@@ -248,8 +308,114 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+
+<div class="container-fluid" id="estrenos">
+    <section class="main row">
+       <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+         <h2 class="text-center"> Estrenos: </h2>
+         <br>
+       </article>
+<br>
+<br>
+<div class="container-fluid">
+    <section class="row">
+       <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+         <p></p>
+         <br>
+         <br>
+         <br>
+
+         <div class="container-fluid">
+         <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Black_Clover_logo_%28English%29.png" width="400" height="200">
+         <div>
+
+       </article>
+         <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+           <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+             <br>
+             <h4 class="text-center"> Descripción: </h4>
+           </article>
+           <br>
+           <p> Cuando la humanidad estaba a punto de caer por el demonio, un único mago la salvó y lo derrotó. Más tarde ese mago
+             se convirtió en una leyenda y fue nombrado rey mago. Después de ese suceso, el Reino del Trébol gozó de paz a través de generaciones de reyes magos y nueve órdenes mágicas sobordinándolos.
+            Asta y Yuno son huérfanos que fueron criados juntos desde su nacimiento después de ser abandonados en un orfanato de la iglesia de Hage, ubicada en lazona olvidada del Reino del Trébol al mismo tiempo.
+            En un mundo donde todos tienen Poder Mágico (魔力 Maryoku?), cuya habilidad
+             de controlarlo es de manera natural; Asta es la única persona nacida sin magia, lo que lo lleva a entrenar físicamente como compensación.</p>
+             <br>
+            <button class="form-control bg-info text-white">Ver </button>
+          </article>
+        </div>
+         </article>
+     </section>
+
+<br>
+<br>
+<br>
+
+     <div class="container-fluid">
+         <section class="row">
+            <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+              <p></p>
+              <div class="container-fluid">
+              <img class="img-fluid" src="https://www.alertageekchile.cl/wp-content/uploads/2018/01/VA-Jojo.png" width="400" height="200">
+              <div>
+     <br>
+
+            </article>
+              <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <br>
+                  <h4 class="text-center"> Descripción: </h4>
+                </article>
+                <br>
+                <p> Cuando la humanidad estaba a punto de caer por el demonio, un único mago la salvó y lo derrotó. Más tarde ese mago
+                  se convirtió en una leyenda y fue nombrado rey mago. Después de ese suceso, el Reino del Trébol gozó de paz a través de generaciones de reyes magos y nueve órdenes mágicas sobordinándolos.
+                 Asta y Yuno son huérfanos que fueron criados juntos desde su nacimiento después de ser abandonados en un orfanato de la iglesia de Hage, ubicada en lazona olvidada del Reino del Trébol al mismo tiempo.
+                 En un mundo donde todos tienen Poder Mágico (魔力 Maryoku?), cuya habilidad
+                  de controlarlo es de manera natural; Asta es la única persona nacida sin magia, lo que lo lleva a entrenar físicamente como compensación.</p>
+                  <br>
+                 <button class="form-control bg-info text-white">Ver </button>
+               </article>
+             </div>
+              </article>
+          </section>
+
+<br>
+<br>
+<br>
 
           <div class="container-fluid">
+              <section class="row">
+                 <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                   <p></p>
+                   <div class="container-fluid">
+                   <img class="img-fluid" src="https://otakuorbit.files.wordpress.com/2018/07/maxresdefault-2.jpg" width="400" height="200">
+                   <div>
+          <br>
+
+                 </article>
+                   <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                     <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                       <br>
+                       <h4 class="text-center"> Descripción: </h4>
+                     </article>
+                     <br>
+                     <p> La policía de la ciudad de Nueva York investiga una serie de suicidios envueltos con varios acertijos.
+                        Un hombre moribundo le da a un joven líder de una banda, Ash Lynx, una misteriosa sustancia.</p>
+                      <br>
+                      <button class="form-control bg-info text-white">Ver </button>
+                    </article>
+                  </div>
+                   </article>
+               </section>
+
+          <br>
+          <br>
+          <br>
+</div>
+<!--          <div class="container-fluid">
               <nav class="text-center" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -259,7 +425,7 @@
                   <li class="page-item"><a class="page-link" href="#">Next</a></li>
                 </ul>
               </nav>
-            </div>
+            </div> -->
 
 <br>
 
@@ -270,6 +436,7 @@
 
 </body>
 
+<script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

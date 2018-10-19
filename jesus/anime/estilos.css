@@ -3,6 +3,7 @@ header{     background:#c0392b;    color:#fff; }
 body{
   background:  	#FFFFFF;
 }
+
 .jumbotron {       background:#c0392b;     color:#fff; }
 h1 { font-size: 80px    }
 h2 {       background:#c0392b;     color:#fff; }
@@ -16,3 +17,7 @@ img {
     vertical-align: center;
     border-style: none;
 }
+
+.navbar{
+        color: #c0392b;
+  }

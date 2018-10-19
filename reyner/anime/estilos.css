@@ -1,8 +1,10 @@
+
 #Logo{
-  color: white;
-  font-family: fantasy;
-  background-color: #527FB4;
+  background-color: #527FB4 !important;
+  color: white !important;
+  font-family: fantasy !important;
 }
+
 @media (min-width: 100px) and (max-width: 419.98px){
   .shadow{
     height: 480px
@@ -80,4 +82,12 @@
 
 #btn-no{
   width: 35px;
+}
+
+#maspopulares{
+  background-color: #527FB4;
+}
+
+#hrpopulares{
+  border-color: #527FB4;
 }
