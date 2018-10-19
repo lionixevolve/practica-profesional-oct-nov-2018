@@ -1,11 +1,10 @@
 
-#Logo{
-  background-color: #527FB4 !important;
-  color: white !important;
-  font-family: fantasy !important;
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+body{
+  position: relative;
 }
 
-@media (min-width: 100px) and (max-width: 419.98px){
+@media (min-width: 100px) and (max-width: 439.98px){
   .shadow{
     height: 480px
   }
@@ -18,9 +17,22 @@
     font-size: 14px;
     margin-top: 15px;
   }
+
+  .navbar .nav-pills .nav-link{
+    font-size: 13px;
+  }
+
+  .letra-grande{
+    font-size: 20px;
+  }
+
+  .relleno{
+    width: 100%;
+    height: 70px;
+  }
 }
 
-@media (min-width: 420px) and (max-width: 767.98px){
+@media (min-width: 440px) and (max-width: 767.98px){
   .shadow{
     height: 600px
   }
@@ -33,12 +45,21 @@
     font-size: 18px;
     margin-top: 15px;
   }
+
+  .letra-grande{
+    font-size: 26px;
+  }
+
+  .relleno{
+    width: 100%;
+    height: 80px;
+  }
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px){
   .shadow{
-    height: 475px
+    height: 550px
   }
 
   #ImgFondo{
@@ -48,27 +69,54 @@
   #CartaTexto{
     font-size: 14px;
   }
+
+  .letra-grande{
+    font-size: 29px;
+  }
+
+  .relleno{
+    width: 100%;
+    height: 90px;
+  }
 }
 
 
 @media (min-width: 992px) and (max-width: 1199.98px){
   .shadow{
-    height: 475px
+    height: 500px
   }
 
   #ImgFondo{
     height: 300px;
+  }
+
+  .letra-grande{
+    font-size: 32px;
+  }
+
+  .relleno{
+    width: 100%;
+    height: 100px;
   }
 }
 
 
 @media (min-width: 1200px) {
   .shadow{
-    height: 475px
+    height: 550px
   }
 
   #ImgFondo{
     height: 360px;
+  }
+
+  .letra-grande{
+    font-size: 35px;
+  }
+
+  .relleno{
+    width: 100%;
+    height: 110px;
   }
 }
 
@@ -84,10 +132,24 @@
   width: 35px;
 }
 
-#maspopulares{
-  background-color: #527FB4;
+.bg-light{
+  background-color: #6A90BB !important;
 }
 
-#hrpopulares{
-  border-color: #527FB4;
+.fantasia{
+  font-family: fantasy;
+  color: white !important;
+}
+
+.navbar .nav-pills .nav-link{
+  color: white;
+}
+
+.navbar .nav-pills .active{
+  background-color: white;
+  color: #6A90BB !important;
+}
+
+.nav-link{
+  color: white !important;
 }

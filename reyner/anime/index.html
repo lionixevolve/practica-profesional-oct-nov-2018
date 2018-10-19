@@ -42,49 +42,38 @@
 
     <title>Anime Informa</title>
   </head>
-  <body>
-
-    <div class="container navbar-fixed-top">
-
-      <!--Encabezado-->
-      <div class="row">
-        <div class="col-12 mb-3">
-          <nav id="animeinforma" class="navbar navbar-light bg-light fixed-top">
-            <div class="row">
-              <div class="col-sm-12">
-                <div id="Logo" class="pr-3 pl-3">
-                  <h1 class="text-center">Anime Informa</h1>
-                </div>
-              </div>
-            </div>
-            <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link text-blue" href="#populares">Populares</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-blue" href="#nuevos">Nuevos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <div class="container-fluid fixed-top margen">
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+          <a class="navbar-brand fantasia letra-grande" href="#lista">Anime Informa</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#populares">Populares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nuevos">Nuevos</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
 
-      <div data-spy="scroll" data-target="#animeinforma" data-offset="0">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-8">
-            <h5><span class="fi-list" title="list" aria-hidden="true"> <strong>Lista de animes</strong></h5>
-            </div>
+    <div class="container" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <div id="lista" class="relleno"></div>
+      <div class="row">
+        <div  class="col-lg-6 col-md-6 col-sm-8">
+          <h5><span class="fi-list" title="list" aria-hidden="true"> <strong>Lista de animes</strong></h5>
+        </div>
+      </div>
+        <hr id="populares" class="border-secondary">
+          <!--Primera fila lista-->
+
+          <div class="col-12">
+            <h5 ><span class="fi-arrow-right" title="arrow-right" aria-hidden="true"> <strong>Populares</strong></h5>
           </div>
+
           <hr class="border-secondary">
 
-          <!--Clasificacion-->
-          <div class="row">
-            <div class="col-12">
-              <h5 id="populares"><span class="fi-arrow-right" title="arrow-right" aria-hidden="true"> <strong>Populares</strong></h5>
-            </div>
-          </div>
-            <!--Primera fila lista-->
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
               <div class="card rounded shadow">
@@ -125,12 +114,13 @@
             </div>
           </div>
 
-            <div class="row">
-              <div class="col-12">
-                <h5 id="nuevos"><span class="fi-arrow-right" title="arrow-right" aria-hidden="true"> <strong>Nuevos</strong></h5>
-              </div>
-            </div>
+          <hr id="nuevos" class="border-secondary">
 
+          <div class="col-12">
+            <h5 ><span class="fi-arrow-right" title="arrow-right" aria-hidden="true"> <strong>Nuevos</strong></h5>
+          </div>
+
+          <hr class="border-secondary">
           <!--Segunda fila lista-->
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
@@ -170,9 +160,8 @@
             </div>
           </div>
         </div>
-      </div>
     <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
