@@ -9,31 +9,87 @@
   <meta name="viewport" content="width=device-witdth, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos.css">
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+          ar scroll = new SmoothScroll('a[href*="#"]', {
+
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+
+      // Speed & Easing
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+      offset: function (anchor, toggle) {
+        if (toggle.classList.closest('.my-header-nav')) {
+          return 25;
+        } else {
+          return 50;
+        }
+
+      },
+      easing: 'easeInOutCubic',
+      customEasing: function (time) {
+
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      updateURL: true,
+      popstate: true,
+      emitEvents: true
+      });
+  </script>
 </head>
 
 <body>
+
   <header>
-    <div class="container">
+
+    <div class="container-fluid navbar-fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+              <a class="navbar-brand" href="index.html">Animeteca</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a data-scroll class="nav-link" href=".">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#animes">Animes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#estrenos">Estrenos</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+</div>
+  <!---  <div class="container">
       <div class="page-header">
         <h6> Animeteca  </h6>
       </div>
-    </div>
+    </div> -->
   </header>
 
 
 
-  <ul class="nav nav-tabs">
+
+<!--  <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" href=".">Inicio</a>
     </li>
     <li class="nav-item">
       <a class="nav-link active" href="#estrenos">Estrenos</a>
     </li>
-  </ul>
+  </ul> -->
 
   <br>
 
-
+<div id="carouselbotromp">
 <div class="container-fluid hidden-xs hidden-sm">
 <div id="carouselExampleSlidesOnly"  class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -94,12 +150,14 @@ géneros y hay un sin fin de historias, ¡Aventurate a conocer increíbles histo
     </div>
   </section>
 </div>
-
+</div>
 <br>
 <br>
 <br>
 
-  <div class="container-fluid">
+
+<div data-spy="scroll" data-target="#NavDinamico" data-offset="0">
+  <div class="container-fluid" id="animes">
       <section class="main row">
          <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
            <h2 class="text-center"> Animes: </h2>
@@ -358,6 +416,7 @@ géneros y hay un sin fin de historias, ¡Aventurate a conocer increíbles histo
           <br>
           <br>
           <br>
+</div>
 <!--          <div class="container-fluid">
               <nav class="text-center" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
@@ -379,6 +438,7 @@ géneros y hay un sin fin de historias, ¡Aventurate a conocer increíbles histo
 
 </body>
 
+<script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
