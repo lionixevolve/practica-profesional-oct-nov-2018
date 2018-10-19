@@ -7,6 +7,36 @@
   <meta name="viewport" content="width=device-witdth, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos.css">
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+          ar scroll = new SmoothScroll('a[href*="#"]', {
+
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+
+      // Speed & Easing
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+      offset: function (anchor, toggle) {
+        if (toggle.classList.closest('.my-header-nav')) {
+          return 25;
+        } else {
+          return 50;
+        }
+
+      },
+      easing: 'easeInOutCubic',
+      customEasing: function (time) {
+
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      updateURL: true,
+      popstate: true,
+      emitEvents: true
+      });
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">>
@@ -102,10 +132,9 @@
 
 <br>
 
-
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-
+  <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
