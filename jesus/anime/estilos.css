@@ -1,23 +1,14 @@
-header{     background:#c0392b;    color:#fff; }
-.main{     background:#FFFFFF;     color:#000; }
-body{
-  background:  	#FFFFFF;
-}
-
-.jumbotron {       background:#c0392b;     color:#fff; }
-h1 { font-size: 90px    }
-h2 {       background:#c0392b;     color:#fff; }
-h3 {       }
-h4 {       background:#c0392b;     color:#fff; }
-h5 {       font-size: 40px;    color:#fff;     }
-h6 {    font-size: 60px    }
-aside{     background:#c0392b;     color:#fff; }
-footer{     background:#c0392b;     color:#fff;  }﻿
-img {
-    vertical-align: center;
-    border-style: none;
-}
-
-.navbar{
-        color: #c0392b;
-  }
+header      {    background:#c0392b;     color:#fff;         }
+.main       {    background:#FFFFFF;     color:#000;         }
+body        {    background:#FFFFFF;                         }
+.jumbotron  {    background:#c0392b;     color:#fff;         }
+h1          {    font-size: 100px                            }
+h2          {    background:#c0392b;     color:#fff;         }
+h3          {                                                }
+h4          {    background:#c0392b;     color:#fff;         }
+h5          {    font-size: 40px;        color:#fff;         }
+h6          {    font-size: 60px                             }
+aside       {    background:#c0392b;     color:#fff;         }
+footer      {    background:#c0392b;     color:#fff;         }﻿
+img         {    vertical-align: center; border-style: none; }
+.navbar     {                            color: #c0392b;     }
