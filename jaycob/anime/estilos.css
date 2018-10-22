@@ -86,7 +86,7 @@ float: right;
 
 @media screen and (max-width: 580px) {
 #navbar {
-  padding: 20px 10px !important;
+  padding: 15px 10px !important;
 }
 #navbar a {
   float: none;
@@ -97,5 +97,5 @@ float: right;
   float: none;
 }
 #per{
-  
+  margin-top: 60px;
 }
