@@ -41,28 +41,28 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">>
   <header>
-    <div class="container-fluid navbar-fixed-top" id="divNav">
+    <div class="container-fluid navbar-fixed-top hidden-xs hidden-sm navbar-dark" id="navbar" >
           <nav class="navbar navbar-expand-lg fixed-top ">
               <a class="navbar-brand" href="..">Animeteca</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #000;">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a data-scroll class="nav-link" href="#descripcion">Descripción <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a data-scroll class="nav-link" href="#personajes">Personajes <span class="sr-only">(current)</span></a>
+                    <a data-scroll class="nav-link" href="#personajes">Personajes</a>
                   </li>
                   <li class="nav-item">
-                    <a data-scroll class="nav-link" href="#visto">Visto <span class="sr-only">(current)</span></a>
+                    <a data-scroll class="nav-link" href="#visto">Visto</a>
                   </li>
                 </ul>
               </div>
             </nav>
         </div>
-</div>
+
   </header>
   <br>
   <br>
@@ -118,20 +118,20 @@
       <br>
       <br>
       <br>
+      <h2 class="text-center">Personajes: </h2>
+      <p class="text-center">Protagonista:</p>
+        <p class="text-center">Naruto Uzumaki </p>
       <section class="main row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h2 class="text-center">Personajes: </h2>
-              <p class="text-center">Protagonista</p>
-              <p class="text-center">Naruto Uzumaki </p>
+          <p class="text-center">Joven:</p>
             <div class="container-fluid offset-xs-2 offset-sm-2 offset-md-2 offset-lg-2">
                <img class="img-fluid" src="https://vignette.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest?cb=20170621101134" width="400" height="200">
             </div>
+            <br>
           </div>
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h2 class="text-center">Personajes: </h2>
-           <p class="text-center">Protagonista</p>
-           <p class="text-center">Naruto Uzumaki </p>
+          <p class="text-center">Adulto: </p>
           <div class="container-fluid offset-xs-2 offset-sm-2 offset-md-2 offset-lg-2">
              <img class="img-fluid" src="https://i.ytimg.com/vi/GDiWB0-kwb8/hqdefault.jpg" width="400" height="200">
           </div>
@@ -161,20 +161,7 @@
 <br>
 
 
-<script>
-  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-  window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("navbar").style.padding = "30px 10px";
-      document.getElementById("logo").style.fontSize = "25px";
-    } else {
-      document.getElementById("navbar").style.padding = "80px 10px";
-      document.getElementById("logo").style.fontSize = "35px";
-    }
-  }
-</script>
 
   <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

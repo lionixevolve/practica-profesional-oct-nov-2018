@@ -1,4 +1,4 @@
-header      {    background:#c0392b;     color:#fff;         }
+
 .main       {    background:#FFFFFF;     color:#000;         }
 body        {    background:#FFFFFF;                         }
 .jumbotron  {    background:#c0392b;     color:#fff;         }
@@ -11,13 +11,13 @@ h6          {    font-size: 60px                             }
 aside       {    background:#c0392b;     color:#fff;         }
 footer      {    background:#c0392b;     color:#fff;         }﻿
 img         {    vertical-align: center; border-style: none; }
-.navbar     {                            color: #c0392b;     }
 
 
-#divNav {
+
+#navbar {
 overflow: hidden;
-background-color: #212529;
-padding: 30px 10px;
+background-color: #000;
+padding: 35px 10px;
 transition: 0.4s;
 position: fixed;
 width: 100%;
@@ -25,9 +25,9 @@ top: 0;
 z-index: 99;
 }
 
-#divNav a {
+#navbar a {
 float: left;
-color: #ffff;
+color: white;
 text-align: center;
 padding: 12px;
 text-decoration: none;
@@ -36,18 +36,18 @@ line-height: 25px;
 border-radius: 4px;
 }
 
-#divNav #logo {
+#navbar #logo {
 font-size: 15px;
 font-weight: bold;
 transition: 0.4s;
 }
 
-#divNav a:hover {
+#navbar a:hover {
 background-color: #c0392b;
 color: black;
 }
 
-#divNav a.active {
+#navbar a.active {
 background-color: #c0392b;
 color: white;
 }
@@ -57,8 +57,8 @@ float: right;
 }
 
 @media screen and (max-width: 580px) {
-#divNav {
-  padding: 20px 10px !important;
+#navbar {
+  padding: 30px 10px !important;
 }
 #navbar a {
   float: none;
@@ -68,6 +68,6 @@ float: right;
 #navbar-right {
   float: none;
 }
-#animes, #inicio, #estrenos, #per, #ar{
-  margin-top: 50px;
+#per #descripcion #personajes #visto{
+  margin-top: 60px;
 }
