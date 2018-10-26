@@ -16,7 +16,7 @@ img         {    vertical-align: center; border-style: none; }
 
 #navbar {
 overflow: hidden;
-background-color: #000;
+background-color: #2E2E2E;
 padding: 35px 10px;
 transition: 0.4s;
 position: fixed;
