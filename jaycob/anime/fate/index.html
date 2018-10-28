@@ -41,9 +41,10 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <div class="container-fluid navbar-fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <a class="navbar-brand" href="index.html">Inicio</a>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="../">AnimePY</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,6 +59,9 @@
               <li class="nav-item">
                 <a data-scroll class="nav-link" href="#per">Personajes</a>
               </li>
+              <li class="nav-item">
+                <a data-scroll class="nav-link" href="#vota">Vota</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -68,7 +72,7 @@
         <div class="row">
 
 
-          <div class="col-md-12" id="inicio">
+          <div class="col-md-12" id="inicio" style="margin-top:200px;">
             <center>
                 <img class="img-fluid" src="https://vignette.wikia.nocookie.net/doblaje/images/7/7f/Fate_Stay_Night_Logo.png/revision/latest?cb=20131109211504&path-prefix=es">
             </center>
@@ -92,7 +96,9 @@
                  Lo que Shirō desconoce, es que la Ciudad Fuyuki se ha vuelto el escenario de una secreta y violenta guerra de magos. Desde hace ya dos siglos siete magos son escogidos para que entablen una lucha a muerte, en busca de obtener el Santo Grial, un cáliz legendario que concede cualquier deseo. Las últimas cuatro Guerras del Santo Grial han ocurrido cada sesenta años y la última acabó hace apenas una década, pero la quinta comienza prematuramente. Cada mago (o “Master”/"Maestro") puede invocar a un Espíritu Heróico de nombre “Servant”/"Sirviente", que le ayudará a derrotar a los otros para en último término hacerse con el Grial. Shirō, participando junto con Saber, tendrá la oportunidad de poner a prueba sus ideales y de prevenir que un desastre como el de hace diez años vuelva a repetirse.
                 </p>
                   <br>
-                  <div class="col-xs-12" id="per">
+                  <div class="col-xs-12" id="per" >
+                    <br>
+
                     <h2 id="h2">Personajes</h2>
                   </div>
               </div>
@@ -150,11 +156,15 @@
 
             </div>
               <br>
-                  <div class="col-md-12" id="" >
-                    <img class="img-fluid" src="images/duda.png">
-                  </div>
-                <div class="row">
-                    <div class="col-md-12" id="help">
+
+
+                  <div class="row">
+                    <div class="col-xs-3" id="vota" >
+                      <center>
+                        <img class="img-fluid" src="../images/duda.png" width="200" alt="200">
+                      </center>
+                    </div>
+                    <div class="col-xs-9" id="help">
                       <h3>&iquest;Ha visto el anime?</h3>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -195,7 +205,7 @@
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-6 mb-md-0 mb-3">
-          <h5 class="text-uppercase font-weight-bold">Pagina Anime</h5>
+          <h5 class="text-uppercase font-weight-bold">Página Anime</h5>
           <p>Los estamos esperando </p>
 
         </div>
@@ -205,6 +215,20 @@
     </div>
 
   </footer>
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+  </script>
     <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

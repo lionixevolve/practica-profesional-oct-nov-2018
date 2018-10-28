@@ -1,18 +1,73 @@
-header{     background:#c0392b;    color:#fff; }
-.main{     background:#FFFFFF;     color:#000; }
-body{
-  background:  	#FFFFFF;
+
+.main       {    background:#FFFFFF;     color:#000;         }
+body        {    background:#FFFFFF;                         }
+.jumbotron  {    background:#c0392b;     color:#fff;         }
+h1          {    font-size: 100px                            }
+h2          {    background:#c0392b;     color:#fff;         }
+h3          {                                                }
+h4          {    background:#c0392b;     color:#fff;         }
+h5          {    font-size: 40px;        color:#fff;         }
+h6          {    font-size: 60px                             }
+aside       {    background:#c0392b;     color:#fff;         }
+footer      {    background:#c0392b;     color:#fff;         }﻿
+img         {    vertical-align: center; border-style: none; }
+
+
+
+#navbar {
+overflow: hidden;
+background-color: #2E2E2E;
+padding: 35px 10px;
+transition: 0.4s;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 99;
 }
-.jumbotron {       background:#c0392b;     color:#fff; }
-h1 { font-size: 80px    }
-h2 {       background:#c0392b;     color:#fff; }
-h3 {       }
-h4 {       background:#c0392b;     color:#fff; }
-h5 {       font-size: 40px;    color:#fff;     }
-h6 {    font-size: 60px    }
-aside{     background:#c0392b;     color:#fff; }
-footer{     background:#c0392b;     color:#fff;  }﻿
-img {
-    vertical-align: center;
-    border-style: none;
+
+#navbar a {
+float: left;
+color: white;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px;
+line-height: 25px;
+border-radius: 4px;
+}
+
+#navbar #logo {
+font-size: 15px;
+font-weight: bold;
+transition: 0.4s;
+}
+
+#navbar a:hover {
+background-color: #c0392b;
+color: black;
+}
+
+#navbar a.active {
+background-color: #c0392b;
+color: white;
+}
+
+#navbar-right {
+float: right;
+}
+
+@media screen and (max-width: 580px) {
+#navbar {
+  padding: 30px 10px !important;
+}
+#navbar a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+#navbar-right {
+  float: none;
+}
+#per #descripcion #personajes #visto{
+  margin-top: 60px;
 }

@@ -1,10 +1,4 @@
 
-body {
-
-background-image: url(images/cl.png);
-   /* */
-
-}
 footer{
   background: #F2F2F2;
 
@@ -16,7 +10,8 @@ footer{
 #h2{
   background-color: black;
   margin-top: 2em;
-
+  font-size: 50px;
+  color: white;
 }
 #ar{
   margin: 10px;
@@ -24,7 +19,7 @@ footer{
 }
 h1, h2{
   text-align: center;
-  color: white;
+
 
 }
 h3{
@@ -45,12 +40,7 @@ button{
   margin-bottom: 30px;
   align: bottom;
 }
-body{
 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  position:relative;
-}
 
 #navbar {
 overflow: hidden;
@@ -96,7 +86,7 @@ float: right;
 
 @media screen and (max-width: 580px) {
 #navbar {
-  padding: 20px 10px !important;
+  padding: 15px 10px !important;
 }
 #navbar a {
   float: none;
@@ -106,6 +96,6 @@ float: right;
 #navbar-right {
   float: none;
 }
-#accion, #inicio, #misterio, #per, #ar{
-  margin-top: 50px;
+#per{
+  margin-top: 60px;
 }
