@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import { NavBar } from './js-components/NavBar';
 
-class App extends Component {
+class AnimeContainer extends Component {
   render() {
-    return <h1>Hola mundo</h1>
+    return <NavBar />
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<AnimeContainer />, document.getElementById('app'));
