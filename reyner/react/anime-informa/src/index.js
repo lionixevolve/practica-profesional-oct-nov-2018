@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { NavBar } from './js-components/NavBar';
+import { Contenedor } from './js-components/Contenedor';
 
 class AnimeContainer extends Component {
   render() {
-    return <NavBar />
+    return <Contenedor />
   }
 }
 
