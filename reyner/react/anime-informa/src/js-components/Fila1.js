@@ -31,6 +31,7 @@ export const Fila1 = () => {
       </div>
       <Nuevos />
       <div className="row">
+
         <Carta
         src="imagenes/986749-zatch-bell-wallpaper-3840x2160-phone.jpg"
         alt="Imagen Zatch Bell"
@@ -51,6 +52,7 @@ export const Fila1 = () => {
         title="Boku no Hero"
         info="Las personas no nacen iguales, hecho que Midoriya Izuku corroboró cuando sus compañeros de clase se metían con él..."
         masinfo="Mas informacion acerca de Boku no Hero" />
+
       </div>
     </div>
   );
