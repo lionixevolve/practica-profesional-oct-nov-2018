@@ -8,7 +8,7 @@ export class Contenedor extends Component{
 
   constructor(props){
     super(props)
-    this.state = { info: 'index' }
+    this.state = { info: 'inde' }
   }
 
   render(){

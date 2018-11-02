@@ -124,10 +124,14 @@ body{
 
 #btn-si{
   width: 35px;
+  color: white;
+  cursor: pointer;
 }
 
 #btn-no{
   width: 35px;
+  color: white;
+  cursor: pointer;
 }
 
 .bg-light{
