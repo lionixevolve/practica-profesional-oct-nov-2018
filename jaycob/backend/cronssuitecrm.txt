@@ -1,0 +1,3 @@
+In order to run the SuiteCRM schedulers, create a batch file to run using Windows Scheduled Tasks. The batch file should include the following commands:
+cd /D C:\xampp\htdocs\suitecrm
+php.exe -f cron.php 
