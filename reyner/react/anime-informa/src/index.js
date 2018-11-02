@@ -9,10 +9,5 @@ class AnimeContainer extends Component {
   }
 }
 
-class NarutoContenedor extends Component {
-    render() {
-      return <
-    }
-}
 
 ReactDOM.render(<AnimeContainer />, document.getElementById('app'));
