@@ -2,7 +2,7 @@ import React from 'react';
 import { NavBar } from './NavBar';
 import { Lista } from './Lista';
 import { Populares } from './Populares'
-import { Fila1 } from './Fila1';
+import { Fila } from './Fila';
 
 export const Contenedor = () =>{
   return (
@@ -10,7 +10,7 @@ export const Contenedor = () =>{
       <NavBar />
       <Lista />
       <Populares />
-      <Fila1 />
+      <Fila />
     </div>
   );
 }
