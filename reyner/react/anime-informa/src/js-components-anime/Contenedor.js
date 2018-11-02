@@ -1,13 +1,12 @@
 import React from 'react';
-import { NavBar1 } from './NavBar1';
-import { Lista } from './Lista';
-import { Populares } from './Populares'
+import { NavBar } from './NavBar';
+import { NavBar2 } from './NavBar2';
 import { ContenidoInfo } from './ContenidoInfo';
 
 export const Contenedor = () =>{
   return (
     <div className="container" data-spy="scroll" data-target="#navbarAnimeInforma" data-offset="0">
-      <NavBar1 />
+      <NavBar />
       <ContenidoInfo />
     </div>
   );

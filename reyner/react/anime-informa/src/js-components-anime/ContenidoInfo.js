@@ -1,12 +1,15 @@
 import React from 'react';
 import { Carta } from './Carta';
 import { Nuevos } from './Nuevos';
+import { Populares } from './Populares';
+import { Lista } from './Lista';
 
 export const ContenidoInfo = () => {
   return (
     <div>
+      <Lista />
+      <Populares />
       <div className="row">
-
         <Carta
         src="imagenes/naruto-shippuden-split-i30936.jpg"
         alt="Imagen Naruto"
