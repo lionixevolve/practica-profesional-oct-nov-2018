@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const NavBar = () => {
+export const NavBar1 = () => {
   return (
     <div className="container-fluid fixed-top margen">
       <nav id="navbarAnimeInforma" className="navbar navbar-light bg-light">

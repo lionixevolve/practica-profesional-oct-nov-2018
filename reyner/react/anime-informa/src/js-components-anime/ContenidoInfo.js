@@ -2,7 +2,7 @@ import React from 'react';
 import { Carta } from './Carta';
 import { Nuevos } from './Nuevos';
 
-export const Fila = () => {
+export const ContenidoInfo = () => {
   return (
     <div>
       <div className="row">
