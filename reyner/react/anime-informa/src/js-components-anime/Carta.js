@@ -10,7 +10,7 @@ export const Carta = (props) => {
           <p className="card-text text-justify">{props.info}</p>
         </div>
         <div className="card-footer">
-          <a className="btn btn-info" href="naruto" data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></a>
+          <a className="btn btn-info text-white" onClick={props.boton} data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></a>
         </div>
       </div>
     </div>

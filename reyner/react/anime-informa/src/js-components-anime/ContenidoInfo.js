@@ -3,10 +3,10 @@ import { Titulo } from './Titulo';
 import { Info } from './Info';
 import { Visto } from './Visto';
 
-export const ContenidoInfo = () => {
+export const ContenidoInfo = (props) => {
   return (
     <div>
-      <Titulo />
+      <Titulo boton={props.onClick}/>
       <Info />
       <Visto />
     </div>

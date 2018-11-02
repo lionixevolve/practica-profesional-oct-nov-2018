@@ -118,6 +118,11 @@ body{
   }
 }
 
+#atras:hover{
+  background-color: #7A7F85;
+  cursor: pointer;
+}
+
 #IconoNaruto{
   width: 28px;
 }
