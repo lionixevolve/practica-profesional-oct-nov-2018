@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta description ="Descripcion del sitio" />
+  <title>Animeteca</title>
+  <meta name="viewport" content="width=device-witdth, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+          ar scroll = new SmoothScroll('a[href*="#"]', {
+
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+
+      // Speed & Easing
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+      offset: function (anchor, toggle) {
+        if (toggle.classList.closest('.my-header-nav')) {
+          return 25;
+        } else {
+          return 50;
+        }
+
+      },
+      easing: 'easeInOutCubic',
+      customEasing: function (time) {
+
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      updateURL: true,
+      popstate: true,
+      emitEvents: true
+      });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <header>
+    <div class="container-fluid navbar-fixed-top hidden-xs hidden-sm navbar-dark" id="navbar" >
+          <nav class="navbar navbar-expand-lg fixed-top ">
+              <a class="navbar-brand active" href=".">Animeteca</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #2E2E2E;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#animes">Animes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#estrenos">Estrenos</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+  </header>
+<br>
+<br>
+<div id="inicio">
+  <br>
+  <br>
+<div id="carouselbotromp">
+<div class="container-fluid hidden-xs hidden-sm">
+<div id="carouselExampleSlidesOnly"  class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="http://around-akiba.com/wp-content/uploads/2018/01/persona-5-1280x500.jpg"  alt="First slide">
+      <div class="carousel-caption hidden-xs hidden-sm">
+        <h3> Bienvenidos!  </h3>
+          <p> </p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="http://hddesktopwallpapers.in/wp-content/uploads/2015/06/Bleach-Wallpapers-desktop-1280x500.jpg" alt="Second slide">
+      <div class="carousel-caption hidden-xs hidden-sm">
+        <h5>  </h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="http://hddesktopwallpapers.in/wp-content/uploads/2015/07/music-wallpaper-animated-1280x500.jpg" alt="Third slide">
+      <div class="carousel-caption hidden-xs hidden-sm">
+        <h5></h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<br>
+<br>
+<div class="container">
+    <section class="main row">
+   <div class="jumbotron col-xs-12 col-sm-12 col-md-12 col-lg-7">
+      <h1>Okaeri!</h1>
+      <p> Anime se le conoce como las series animadas que son producidas en Japón, estas series abarcan muchos
+géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles historias! </p>
+      <p> Si deseas conocer más dale al siguiente botón :  </p>
+      <br>
+      <p><a href="https://es.wikipedia.org/wiki/Anime" class="btn btn-primary btn-lg">Leer mas</a> </p>
+      </div>
+      <div class=" col-xs-12 col-sm-1 col-md-1 col-lg-1">
+      </div>
+      <div class=" col-xs-offset-12 col-sm-offset-12 col-md-offset-12 col-lg-offset-4">
+      <img class="img-responsive" src="https://dwgkfo5b3odmw.cloudfront.net/manga/thumbs/thumb-22550-WSJ2017_04_24_WEB.jpg" width="300" height="450">
+    </div>
+  </section>
+</div>
+</div>
+</div>
+<br>
+
+<div data-spy="scroll" data-target="#NavDinamico" data-offset="0">
+  <div class="container-fluid" id="animes">
+    <br>
+    <br>
+    <br>
+      <section class="main row">
+         <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+           <h2 class="text-center"> Animes: </h2>
+           <br>
+         </article>
+
+
+       <div class="container-fluid">
+           <section class="row">
+              <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                <div class="container-fluid">
+                <br>
+                <img class="img-fluid" id="imagennaruto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/1200px-Naruto_logo.svg.png" width="400" height="150">
+                <div>
+                <br>
+                <br>
+                </article>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h4 class="text-center"> Descripción: </h4>
+                  </div>
+                  <br>
+                  <p> Naruto es un manga escrito e ilustrado por Masashi Kishimoto.
+                    La obra narra la historia de un ninja adolescente llamado Naruto Uzumaki, quien aspira a
+                    convertirse en Hokage, líder de su aldea, con el propósito de ser reconocido como alguien
+                    importante dentro de la aldea y entre sus compañeros.
+                   </p>
+                   <br>
+                   <a href="naruto"><button class="form-control bg-info text-white">Ver </button> </a>
+                </div>
+
+            </section>
+<br>
+<br>
+<br>
+            <div class="container-fluid">
+                <section class="row">
+                   <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                     <p></p>
+                     <div class="container-fluid">
+                     <img class="img-fluid" src="https://vignette.wikia.nocookie.net/evangelion/images/d/d9/Evangelion_Logo.png/revision/latest?cb=20140119154112&path-prefix=es" width="400" height="200">
+                     <br>
+                     <br>
+                     <div>
+
+                   </article>
+                     <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                       <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                         <br>
+                         <h4 class="text-center"> Descripción: </h4>
+                       </article>
+                       <br>
+                       <p> Anime creado por el estudio Gainax, y dirigido por Hideaki Anno.
+                      La historia de la obra se da lugar en un mundo futurista en el que una organización
+                      paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y
+                       naturaleza desconocidos, los «Ángeles», utilizando para ello mechas humanoides llamados «EVA».
+                        </p>
+                        <br>
+                        <button class="form-control bg-info text-white">Ver </button>
+                      </article>
+                    </div>
+                     </article>
+                 </section>
+
+<br>
+<br>
+<br>
+
+                 <div class="container-fluid">
+                     <section class="row">
+                        <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                          <p></p>
+                          <div class="container-fluid">
+                          <br>
+                          <br>
+                          <img class="img-fluid" src="https://vignette.wikia.nocookie.net/toriko/images/9/9a/Haikyuu_logo.png/revision/latest?cb=20140318193043&path-prefix=es" width="400" height="200">
+                          <br>
+                          <div>
+
+                        </article>
+                          <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <h4 class="text-center center-block"> Descripción: </h4>
+                            </article>
+                            <br>
+                            <p> La historia da comienzo cuando Shōyō Hinata, aún siendo un estudiante de primaria, ve un
+                                partido de voleibol por la televisión, en el cual jugaba un jugador al que él se refiere como "Pequeño Gigante".
+                                Desde entonces, pretende convertirse en alguien como el
+                               "Pequeño Gigante" debido a que ambos son bajos de estatura y comienza a aficionarse por este deporte. Shōyō logra
+                                montar su propio club de voleibol en su escuela, pero resulta ser que es el único miembro. A pesar de este problema,
+                                no se rinde y entrena como puede por su cuenta. Finalmente, consigue que ingresen al club otros cinco miembros, con los cuales
+                                participa en su primer torneo. Sin embargo, son derrotados por el equipo favorito del campeonato, el mismo equipo al que pertenece
+                                Tobio Kageyama, un habilidoso joven que es apodado "El rey de la cancha".
+                             </p>
+                             <br>
+                             <button class="form-control bg-info text-white">Ver </button>
+                           </article>
+                         </div>
+                          </article>
+                        </div>
+                      </section>
+
+<br>
+<br>
+<br>
+
+                      <div class="container-fluid">
+                          <section class="row">
+                             <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                               <p></p>
+                               <div class="container-fluid">
+                              <br>
+                               <br>
+                               <br>
+                               <br>
+                               <img class="img-fluid" src="https://vignette.wikia.nocookie.net/nanatsu-no-taizai/images/c/c9/Logo.png/revision/latest?cb=20130802085855" width="400" height="200">
+                               <br>
+                               <br>
+                               <div>
+
+                             </article>
+                               <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                 <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                   <br>
+                                   <h4 class="text-center center-block"> Descripción: </h4>
+                                 </article>
+                                 <br>
+                                 <p> Elizabeth Liones, la tercera princesa del reino de Liones, tras el golpe de estado hecho por los Caballeros
+                                   Sagrados decide huir y buscar a los ya desaparecidos caballeros que se hacen llamar Los siete pecados capitales,
+                                   cuya orden está conformada por los peores criminales del reino. Un día cae desmayada en una taberna.
+                                   Al ver a Elizabeth los clientes creen que es uno de los Sietes Pecados, y todos menos el joven dueño de la taberna y su
+                                   compañero Hawk —un puerco que puede hablar— huyen asustados. El joven dueño de la taberna revela que es Meliodas,
+                                    el Pecado de la Ira del Dragón y el Capitán de los Siete Pecados Capitales. Elizabeth impresionada al encontrar al primer Pecado,
+                                     decide buscar a los otros restantes junto a Meliodas y Hawk, que se transportan sobre el lomo de la madre de Hawk, para así encontrar
+                                     a los restantes miembros de Los Siete Pecados Capitales.
+                                  </p>
+                                  <br>
+                                  <button class="form-control bg-info text-white">Ver </button>
+                                </article>
+                              </div>
+                               </article>
+
+                             </div>
+                           </section>
+
+<br>
+<br>
+
+<div class="container-fluid" id="estrenos">
+  <br>
+  <br>
+  <br>
+    <section class="main row">
+       <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+         <h2 class="text-center"> Estrenos: </h2>
+         <br>
+       </article>
+<br>
+<br>
+<div class="container-fluid">
+    <section class="row">
+       <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+         <p></p>
+         <br>
+         <br>
+         <br>
+         <div class="container-fluid">
+         <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Black_Clover_logo_%28English%29.png" width="400" height="200">
+         <div>
+
+       </article>
+         <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+           <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+             <br>
+             <h4 class="text-center"> Descripción: </h4>
+           </article>
+           <br>
+           <p> Cuando la humanidad estaba a punto de caer por el demonio, un único mago la salvó y lo derrotó. Más tarde ese mago
+             se convirtió en una leyenda y fue nombrado rey mago. Después de ese suceso, el Reino del Trébol gozó de paz a través de generaciones de reyes magos y nueve órdenes mágicas sobordinándolos.
+            Asta y Yuno son huérfanos que fueron criados juntos desde su nacimiento después de ser abandonados en un orfanato de la iglesia de Hage, ubicada en lazona olvidada del Reino del Trébol al mismo tiempo.
+            En un mundo donde todos tienen Poder Mágico (魔力 Maryoku?), cuya habilidad
+             de controlarlo es de manera natural; Asta es la única persona nacida sin magia, lo que lo lleva a entrenar físicamente como compensación.</p>
+             <br>
+            <button class="form-control bg-info text-white">Ver </button>
+          </article>
+        </div>
+         </article>
+     </section>
+<br>
+<br>
+<br>
+     <div class="container-fluid">
+         <section class="row">
+            <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+              <p></p>
+              <div class="container-fluid">
+              <img class="img-fluid" src="https://www.alertageekchile.cl/wp-content/uploads/2018/01/VA-Jojo.png" width="400" height="200">
+              <div>
+     <br>
+
+            </article>
+              <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <br>
+                  <h4 class="text-center"> Descripción: </h4>
+                </article>
+                <br>
+                <p> Cuando la humanidad estaba a punto de caer por el demonio, un único mago la salvó y lo derrotó. Más tarde ese mago
+                  se convirtió en una leyenda y fue nombrado rey mago. Después de ese suceso, el Reino del Trébol gozó de paz a través de generaciones de reyes magos y nueve órdenes mágicas sobordinándolos.
+                 Asta y Yuno son huérfanos que fueron criados juntos desde su nacimiento después de ser abandonados en un orfanato de la iglesia de Hage, ubicada en lazona olvidada del Reino del Trébol al mismo tiempo.
+                 En un mundo donde todos tienen Poder Mágico (魔力 Maryoku?), cuya habilidad
+                  de controlarlo es de manera natural; Asta es la única persona nacida sin magia, lo que lo lleva a entrenar físicamente como compensación.</p>
+                  <br>
+                 <button class="form-control bg-info text-white">Ver </button>
+               </article>
+             </div>
+              </article>
+          </section>
+
+<br>
+<br>
+<br>
+
+          <div class="container-fluid">
+              <section class="row">
+                 <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
+                   <p></p>
+                   <div class="container-fluid">
+                   <img class="img-fluid" src="https://otakuorbit.files.wordpress.com/2018/07/maxresdefault-2.jpg" width="400" height="200">
+                   <div>
+          <br>
+
+                 </article>
+                   <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                     <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                       <br>
+                       <h4 class="text-center"> Descripción: </h4>
+                     </article>
+                     <br>
+                     <p> La policía de la ciudad de Nueva York investiga una serie de suicidios envueltos con varios acertijos.
+                        Un hombre moribundo le da a un joven líder de una banda, Ash Lynx, una misteriosa sustancia.</p>
+                      <br>
+                      <button class="form-control bg-info text-white">Ver </button>
+                    </article>
+                  </div>
+                   </article>
+               </section>
+
+          <br>
+          <br>
+          <br>
+</div>
+
+
+<br>
+
+                 <footer>
+                   Animeteca @2018
+                 </footer>
+
+
+</body>
+
+<script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
