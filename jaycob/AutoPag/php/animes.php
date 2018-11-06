@@ -28,9 +28,9 @@ echo $myJSON;
 ?>
 
 <?php
-$myObj->name = "Fate/Stay";
+$myObj->name = "D.Gray-man";
 $myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
+$myObj->Detalles = "...";
 
 $myJSON = json_encode($myObj);
 
@@ -38,9 +38,9 @@ echo $myJSON;
 ?>
 
 <?php
-$myObj->name = "Fate/Stay";
+$myObj->name = "Ghost in the shell";
 $myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
+$myObj->Detalles = "...";
 
 $myJSON = json_encode($myObj);
 
@@ -48,9 +48,9 @@ echo $myJSON;
 ?>
 
 <?php
-$myObj->name = "Fate/Stay";
-$myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
+$myObj->name = "Monogatari series";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
 
 $myJSON = json_encode($myObj);
 
@@ -58,18 +58,9 @@ echo $myJSON;
 ?>
 
 <?php
-$myObj->name = "Fate/Stay";
-$myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
-
-$myJSON = json_encode($myObj);
-
-echo $myJSON;
-?>
-<?php
-$myObj->name = "Fate/Stay";
-$myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
+$myObj->name = "Gosick";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
 
 $myJSON = json_encode($myObj);
 
@@ -77,9 +68,49 @@ echo $myJSON;
 ?>
 
 <?php
-$myObj->name = "Fate/Stay";
-$myObj->Genero = "Accion";
-$myObj->Detalles = "New York";
+$myObj->name = "Durarara";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
+
+$myJSON = json_encode($myObj);
+
+echo $myJSON;
+?>
+
+<?php
+$myObj->name = "Occultic;nine";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
+
+$myJSON = json_encode($myObj);
+
+echo $myJSON;
+?>
+
+<?php
+$myObj->name = "Gosick";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
+
+$myJSON = json_encode($myObj);
+
+echo $myJSON;
+?>
+
+<?php
+$myObj->name = "Gosick";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
+
+$myJSON = json_encode($myObj);
+
+echo $myJSON;
+?>
+
+<?php
+$myObj->name = "Gosick";
+$myObj->Genero = "Misterio";
+$myObj->Detalles = "...";
 
 $myJSON = json_encode($myObj);
 
