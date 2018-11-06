@@ -6,64 +6,44 @@ import { Lista } from './Lista';
 
 var anime = require("../animes.json");
 
+var cantidad = anime.length;
+var listaNuevos = [];
+var listaPopulares = [];
+
 export const ContenidoIndex = (props) => {
+  for (let i=0; i<cantidad; i++){
+    if(anime[i].etiqueta === "Nuevos"){
+      listaNuevos.push(
+        <Carta
+        src={anime[i].src}
+        alt={anime[i].alt}
+        title={anime[i].title}
+        info={anime[i].info}
+        masinfo={anime[i].masinfo}
+        boton={props.onClick}/>
+      );
+    } else {
+      listaPopulares.push(
+        <Carta
+        src={anime[i].src}
+        alt={anime[i].alt}
+        title={anime[i].title}
+        info={anime[i].info}
+        masinfo={anime[i].masinfo}
+        boton={props.onClick}/>
+      );
+    }
+  }
   return (
     <div>
       <Lista />
       <Populares />
       <div className="row">
-        <Carta
-        src={anime[0].src}
-        alt={anime[0].alt}
-        title={anime[0].title}
-        info={anime[0].info}
-        masinfo={anime[0].masinfo}
-        boton={props.onClick}/>
-
-        <Carta
-        src={anime[1].src}
-        alt={anime[1].alt}
-        title={anime[1].title}
-        info={anime[1].info}
-        masinfo={anime[1].masinfo}
-        boton={props.onClick}/>
-
-        <Carta
-        src={anime[2].src}
-        alt={anime[2].alt}
-        title={anime[2].title}
-        info={anime[2].info}
-        masinfo={anime[2].masinfo}
-        boton={props.onClick}/>
-
+        {listaPopulares}
       </div>
-      <Nuevos />
+      <Nuevos/>
       <div className="row">
-
-        <Carta
-        src={anime[3].src}
-        alt={anime[3].alt}
-        title={anime[3].title}
-        info={anime[3].info}
-        masinfo={anime[3].masinfo}
-        boton={props.onClick}/>
-
-        <Carta
-        src={anime[4].src}
-        alt={anime[4].alt}
-        title={anime[4].title}
-        info={anime[4].info}
-        masinfo={anime[4].masinfo}
-        boton={props.onClick}/>
-
-        <Carta
-        src={anime[5].src}
-        alt={anime[5].alt}
-        title={anime[5].title}
-        info={anime[5].info}
-        masinfo={anime[5].masinfo}
-        boton={props.onClick}/>
-
+        {listaNuevos}
       </div>
     </div>
   );
