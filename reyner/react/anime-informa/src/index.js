@@ -9,5 +9,4 @@ class AnimeContainer extends Component {
   }
 }
 
-
 ReactDOM.render(<AnimeContainer />, document.getElementById('app'));

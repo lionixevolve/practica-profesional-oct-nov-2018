@@ -4,64 +4,46 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 
+var anime = require("../animes.json");
+
+var cantidad = anime.length;
+var listaNuevos = [];
+var listaPopulares = [];
+
 export const ContenidoIndex = (props) => {
+  for (let i=0; i<cantidad; i++){
+    if(anime[i].etiqueta === "Nuevos"){
+      listaNuevos.push(
+        <Carta
+        src={anime[i].src}
+        alt={anime[i].alt}
+        title={anime[i].title}
+        info={anime[i].info}
+        masinfo={anime[i].masinfo}
+        boton={props.onClick}/>
+      );
+    } else {
+      listaPopulares.push(
+        <Carta
+        src={anime[i].src}
+        alt={anime[i].alt}
+        title={anime[i].title}
+        info={anime[i].info}
+        masinfo={anime[i].masinfo}
+        boton={props.onClick}/>
+      );
+    }
+  }
   return (
     <div>
       <Lista />
       <Populares />
       <div className="row">
-        <Carta
-        src="imagenes/naruto-shippuden-split-i30936.jpg"
-        alt="Imagen Naruto"
-        title="Naruto Shippuden"
-        info="Naruto ha pasado éstos últimos 3 años adiestrando al lado de Jiraiya..."
-        masinfo="Mas informacion acerca de Naruto"
-        boton={props.onClick}/>
-
-        <Carta
-        src="imagenes/one-piece_0.jpg"
-        alt="Imagen One piece"
-        title="One piece"
-        info="Riqueza, fama, poder... un hombre había obtenido todo en este mundo, era el Rey de los Piratas Gold Roger..."
-        masinfo="Mas informacion acerca de One piece"
-        boton={props.onClick}/>
-
-        <Carta
-        src="imagenes/1526420779-dragon-ball.jpg"
-        alt="Imagen DBZ"
-        title="Dragon Ball Z"
-        info="La historia de Dragon Ball Z se divide en cuatro ramas centrales, repartidas en un total de 291 episodios..."
-        masinfo="Mas informacion acerca de DBZ"
-        boton={props.onClick}/>
-
+        {listaPopulares}
       </div>
-      <Nuevos />
+      <Nuevos/>
       <div className="row">
-
-        <Carta
-        src="imagenes/986749-zatch-bell-wallpaper-3840x2160-phone.jpg"
-        alt="Imagen Zatch Bell"
-        title="Zatch Bell"
-        info="Cada mil años, cien niños mamodo se dirigen al mundo humano, en donde se realiza una batalla para decidir el rey del mundo mamodo..."
-        masinfo="Mas informacion acerca de Zatch Bell"
-        boton={props.onClick}/>
-
-        <Carta
-        src="imagenes/5b4a508f4a395.jpeg"
-        alt="Imagen SNK"
-        title="Shingeki no Kyojin"
-        info="Hace varios años, los humanos fueron casi exterminados por los titanes. Los titanes son increíblemente altos, parece que no tienen inteligencia..."
-        masinfo="Mas informacion acerca de Shingeki"
-        boton={props.onClick}/>
-
-        <Carta
-        src="imagenes/Culturageek.com_.ar-Boku-No-Hero-Academia-S3.jpg"
-        alt="Imagen Boku no Hero"
-        title="Boku no Hero"
-        info="Las personas no nacen iguales, hecho que Midoriya Izuku corroboró cuando sus compañeros de clase se metían con él..."
-        masinfo="Mas informacion acerca de Boku no Hero"
-        boton={props.onClick}/>
-
+        {listaNuevos}
       </div>
     </div>
   );
