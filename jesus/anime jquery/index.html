@@ -6,8 +6,11 @@
   <title>Animeteca</title>
   <meta name="viewport" content="width=device-witdth, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/smooth-scroll.polyfills.min.js"></script>
+
+
   <script>
           ar scroll = new SmoothScroll('a[href*="#"]', {
 
@@ -144,7 +147,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
      <br>
    </article>
    <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-    <button onclick="ajax_get_json()" class="form-control bg-info text-white" id="mostraranimelistas">Mostrar </button>
+    <button class="form-control bg-info text-white" id="mostraranimelistas">Mostrar </button>
      <br>
    </article>
  </section>
@@ -152,29 +155,16 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 <div id="animeslista">
 
-<script type="text/javascript">
-
-function ajax_get_json()
-{
-  var xmlhttp;
-  if(window.XMLHttpRequest){
-        xmlhttp = new XMLHttpRequest();
-  }else{
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-  }
-    xmlhttp.onreadystatechange = function(){
-      if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
-        var datos = JSON.parse(xmlhttp.responseText)
-        console.log(datos);
-      }
-    }
-
-    xmlhttp.open("GET", "listaDeAnimes.json", true);
-    xmlhttp.send();
-
- }
 
 
+<script>
+  var prueba = $.ajax({
+    method: "GET",
+    url: "http://localhost/anime%20jquery/listaDeAnimes.json",
+    dataType: "json"
+  });
+
+  console.log(prueba["src"]);
 </script>
 
 
@@ -183,140 +173,7 @@ function ajax_get_json()
 
 
 
-  <!-- Div naruto
-  <div class="container-fluid">
-     <section class="row">
-            <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
-                <div class="container-fluid">
-                  <br>
-                  <img class="img-fluid" id="imagennaruto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/1200px-Naruto_logo.svg.png" width="400" height="150">
-                </div>
-<br>
-<br>
-            </article>
 
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                  <h4 class="text-center"> Descripción: </h4>
-                </div>
-                  <br>
-              <p>
-                Naruto es un manga escrito e ilustrado por Masashi Kishimoto.
-                La obra narra la historia de un ninja adolescente llamado Naruto Uzumaki, quien aspira a
-              convertirse en Hokage, líder de su aldea, con el propósito de ser reconocido como alguien
-                importante dentro de la aldea y entre sus compañeros.
-              </p>
-                  <br>
-                  <a href="naruto"><button class="form-control bg-info text-white">Ver </button> </a>
-                </div>
-
-      </section>
-    </div> <!-- Termina div naruto
-
-<br>
-<br>
-<br>
-
-
-    <!-- Div evangelion
-    <div class="container-fluid">
-        <section class="row">
-              <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
-                <div class="container-fluid">
-                  <img class="img-fluid" src="https://vignette.wikia.nocookie.net/evangelion/images/d/d9/Evangelion_Logo.png/revision/latest?cb=20140119154112&path-prefix=es" width="400" height="200">
-                </div>
-<br>
-<br>
-              </article>
-
-             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                 <br>
-                 <h4 class="text-center"> Descripción: </h4>
-               </div>
-<br>
-               <p>
-              Anime creado por el estudio Gainax, y dirigido por Hideaki Anno.
-              La historia de la obra se da lugar en un mundo futurista en el que una organización
-              paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y
-              naturaleza desconocidos, los «Ángeles», utilizando para ello mechas humanoides llamados «EVA».
-                </p>
-<br>
-                <button class="form-control bg-info text-white">Ver </button>
-              </div>
-
-         </section>
-       </div> <!-- Termina div evangelion -->
-
-<br>
-<br>
-<br>
-
-        <!-- Div haikyuu
-       <div class="container-fluid">
-           <section class="row">
-              <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
-                <div class="container-fluid">
-                <img class="img-fluid" src="https://vignette.wikia.nocookie.net/toriko/images/9/9a/Haikyuu_logo.png/revision/latest?cb=20140318193043&path-prefix=es" width="400" height="200">
-              </div>
-<br>
-<br>
-              </article>
-
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <h4 class="text-center center-block"> Descripción: </h4>
-                    </div>
-<br>
-                  <p> La historia da comienzo cuando Shōyō Hinata, aún siendo un estudiante de primaria, ve un
-                      partido de voleibol por la televisión, en el cual jugaba un jugador al que él se refiere como "Pequeño Gigante".
-                      Desde entonces, pretende convertirse en alguien como el
-                     "Pequeño Gigante" debido a que ambos son bajos de estatura y comienza a aficionarse por este deporte. Shōyō logra
-                      montar su propio club de voleibol en su escuela, pero resulta ser que es el único miembro. A pesar de este problema,
-                      no se rinde y entrena como puede por su cuenta. Finalmente, consigue que ingresen al club otros cinco miembros, con los cuales
-                      participa en su primer torneo. Sin embargo, son derrotados por el equipo favorito del campeonato, el mismo equipo al que pertenece
-                      Tobio Kageyama, un habilidoso joven que es apodado "El rey de la cancha".
-                   </p>
-<br>
-                   <button class="form-control bg-info text-white">Ver </button>
-                 </div>
-            </section>
-          </div> <!-- Div haikyuu -->
-
-<br>
-<br>
-<br>
-
-          <!-- Div Nanatsu
-         <div class="container-fluid">
-             <section class="row">
-                <article class="col-xs-10 col-sm-10 col-md-5 col-lg-5 offset-xs-2 offset-sm-2 offset-md-0 offset-lg-0">
-                  <div class="container-fluid">
-                  <img class="img-fluid" src="https://vignette.wikia.nocookie.net/nanatsu-no-taizai/images/c/c9/Logo.png/revision/latest?cb=20130802085855" width="400" height="200">
-                </div>
-        <br>
-        <br>
-                </article>
-
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h4 class="text-center center-block"> Descripción: </h4>
-                      </div>
-        <br>
-                    <p>  Elizabeth Liones, la tercera princesa del reino de Liones, tras el golpe de estado hecho por los Caballeros
-                        Sagrados decide huir y buscar a los ya desaparecidos caballeros que se hacen llamar Los siete pecados capitales,
-                        cuya orden está conformada por los peores criminales del reino. Un día cae desmayada en una taberna.
-                        Al ver a Elizabeth los clientes creen que es uno de los Sietes Pecados, y todos menos el joven dueño de la taberna y su
-                        compañero Hawk —un puerco que puede hablar— huyen asustados. El joven dueño de la taberna revela que es Meliodas,
-                        el Pecado de la Ira del Dragón y el Capitán de los Siete Pecados Capitales. Elizabeth impresionada al encontrar al primer Pecado,
-                        decide buscar a los otros restantes junto a Meliodas y Hawk, que se transportan sobre el lomo de la madre de Hawk, para así encontrar
-                        a los restantes miembros de Los Siete Pecados Capitales.
-                     </p>
-        <br>
-                     <button class="form-control bg-info text-white">Ver </button>
-                   </div>
-              </section>
-            </div> <!-- Div nanatsu -->
 
 <br>
 <br>
