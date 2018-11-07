@@ -10,7 +10,7 @@ var cantidad = anime.length;
 var listaNuevos = [];
 var listaPopulares = [];
 
-export const ContenidoIndex = (props) => {
+export const ContenidoIndexNode = (props) => {
   for (let i=0; i<cantidad; i++){
     if(anime[i].etiqueta === "Nuevos"){
       listaNuevos.push(

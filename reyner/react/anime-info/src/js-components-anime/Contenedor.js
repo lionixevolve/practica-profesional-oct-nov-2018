@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { NavBar } from './NavBar';
 import { NavBar2 } from './NavBar2';
-import { ContenidoIndex } from './ContenidoIndex';
+import { ContenidoIndexNode } from './ContenidoIndexNode';
+import { ContenidoIndexAjax } from './ContenidoIndexAjax';
 import { ContenidoInfo } from './ContenidoInfo';
 
 export class Contenedor extends Component{
@@ -26,7 +27,7 @@ export class Contenedor extends Component{
       return (
         <div className="container" data-spy="scroll" data-target="#navbarAnimeInforma" data-offset="0">
           <NavBar estado={this.state.info}/>
-          <ContenidoIndex onClick={this.ClickMasInfo}/>
+          <ContenidoIndexNode onClick={this.ClickMasInfo}/>
         </div>
       );
     }
