@@ -103,7 +103,6 @@
         <button type="submit" id="btnaccion" class="btn btn-light" onclick="changebtn" >Mostrar</button>
         <div class="row" id="accion">
           <div class="col-md-12">
-
             <h2 id="h2">Accíon</h2>
           </div>
 
@@ -117,34 +116,11 @@
             <h2 id="h2">Misterio</h2>
 
             </div>
-          <div class="col-xs-12 col-md-6 col-lg-4" id="mono">
-            <a href="index.html"><img class="img-fluid"  src="https://lh3.googleusercontent.com/-ymWf_6nfZZ0/WeMhA4jBWcI/AAAAAAAB2uc/FbbtO2BQcekLLWEMan7B0b8QzmbkIL8gwCJoC/w1920-h1080/Blank%252B_7997e28c1ef6c1f6eb66e64ff7186c9c.jpg"></a>
-            <h3>Monogatari series</h3>
-            <h4>Argumento</h4>
-            <p><br>La serie de Monogatari se centra en Koyomi Araragi, un estudiante de tercer año de instituto que es ahora casi humano después de haber sido vampiro por un tiempo. </p>
-            <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-          </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
-            <a href="index.html">
-            <img class="img-fluid" src="https://images.alphacoders.com/226/thumb-1920-226483.jpg"  >
-            </a>
-            <h3>Gosick</h3>
-            <h4>Argumento</h4>
-            <p><br> La serie se centra principalmente en Kazuya y Victorique que tratan de resolver diferentes casos misteriosos.</p>
-            <br>
-            <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-          </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
-            <a href="index.html">
-            <img class="img-fluid" src="http://getwallpapers.com/wallpaper/full/3/b/1/182671.jpg"  >
-            </a>
-            <h3>Durarara</h3>
-            <h4>Argumento</h4>
-            <br><p>Mikado es testigo de una leyenda urbana en su primer día en la ciudad: el "Jinete negro", quien supuestamente es el conductor sin cabeza de una motocicleta de color negro. </p>
-            <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-          </div>
+
+
+          
 
           <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
             <a href="index.html">
