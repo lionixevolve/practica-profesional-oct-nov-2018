@@ -7,15 +7,23 @@ import $ from 'jquery';
 
 var anime = [];
 
-$.ajax({
-  method: "GET",
+/*$.ajax({
+  method: "POST",
   url: "http://localhost/proyectos/reyner/react/anime-info/src/animes.json",
-  dataType: "json",
+  dataType: "jsonp",
   beforeSend: function () {
     console.log("Espere porfavor");
   },
-  success: function (response) {
-    console.log("Los archivos han llegado con exito");
+  success: function (reponse) {
+    console.log("Siiiiiiiiiiiiiiii!!!!!!!!!!!!!!!!!!!");
+  }
+});*/
+$.ajax({
+  method: "GET",
+  url: "http://localhost/proyectos/reyner/react/anime-info/src/animes.json",
+  dataType: "jsonp",
+  success: function(anime){
+    console.log("Holaaaaaaaaaaaaa");
   }
 });
 
