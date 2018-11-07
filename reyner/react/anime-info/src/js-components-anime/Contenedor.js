@@ -5,6 +5,15 @@ import { ContenidoIndexNode } from './ContenidoIndexNode';
 import { ContenidoIndexAjax } from './ContenidoIndexAjax';
 import { ContenidoInfo } from './ContenidoInfo';
 
+var express = require('express');
+// Import the library:
+var cors = require('cors');
+
+var app = express();
+
+// Then use it before your routes are set up:
+app.use(cors());
+
 export class Contenedor extends Component{
 
   constructor(props){
@@ -27,7 +36,7 @@ export class Contenedor extends Component{
       return (
         <div className="container" data-spy="scroll" data-target="#navbarAnimeInforma" data-offset="0">
           <NavBar estado={this.state.info}/>
-          <ContenidoIndexNode onClick={this.ClickMasInfo}/>
+          <ContenidoIndexAjax onClick={this.ClickMasInfo}/>
         </div>
       );
     }
