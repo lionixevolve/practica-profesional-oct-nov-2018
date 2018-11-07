@@ -27,7 +27,7 @@ export class Contenedor extends Component{
       return (
         <div className="container" data-spy="scroll" data-target="#navbarAnimeInforma" data-offset="0">
           <NavBar estado={this.state.info}/>
-          <ContenidoIndexNode onClick={this.ClickMasInfo}/>
+          <ContenidoIndexAjax onClick={this.ClickMasInfo}/>
         </div>
       );
     }
