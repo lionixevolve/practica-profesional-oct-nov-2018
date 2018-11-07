@@ -1,3 +1,4 @@
+<?php include 'anime.php' ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilos.css" >
     <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/mirror.js"></script>
     <script>
         ar scroll = new SmoothScroll('a[href*="#"]', {
 
@@ -36,7 +38,6 @@
         emitEvents: true
         });
     </script>
-
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid navbar-fixed-top">
@@ -62,7 +63,7 @@
     </div>
     <div class="container">
 
-          <div class=" col-xs-12 " id="inicio" >
+        <div class=" col-xs-12 " id="inicio" >
             <br>
             <br>
             <div class="col-xs-12"style="margin-top:200px;">
@@ -98,82 +99,14 @@
 
             <h2 id="lista"> <center>Lista recomendada<center></h2><br><br>
           </div>
+
+        <button type="submit" id="btnaccion" class="btn btn-light" onclick="changebtn" >Mostrar</button>
         <div class="row" id="accion">
           <div class="col-md-12">
 
             <h2 id="h2">Accíon</h2>
-
-            </div>
-          <div class="col-xs-12 col-md-6 col-lg-4" id="fate">
-            <a href="fate/"><img class="img-fluid" src="https://i.ytimg.com/vi/1ErwgLxBNL0/maxresdefault.jpg"></a>
-
-            <h3>Fate/Stay Night</h3>
-            <h4>Argumento</h4>
-            <p align="left"><br>Shirō Emiya perdió a su familia hace diez años en un enorme incendio que consumió gran parte de la ciudad de Fuyuki.
-              Atrapado entre las llamas, se da por vencido y acepta su propia muerte, pero un enigmático hombre lo encuentra y lo ayuda. Este hombre, lo adopta </p>
-              <br>
-            <a href="fate/"> <button type="button" class="btn btn-dark" >Detalles</button></a>
-
           </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4 " id="aldo">
-            <a href="index.html"><img class="img-fluid" src="https://c.wallhere.com/photos/82/47/Aldnoah_Zero_Slaine_Troyard_Asseylum_Vers_Allusia_Kaizuka_Inaho-94615.jpg!d"></a>
-            <h3>Aldonah zero</h3>
-            <h4>Argumento</h4>
-            <p><br>Un estudiante de bachillerato de la Tierra.
-              Tras la muerte de sus padres, ha estado viviendo al lado de su hermana mayor, Yuki, quien es militar.
-              Es caracterizado por su comportamiento no emotivo y estoico, y es alguien capaz de idear estrategias que ayudan a derrotar a los Caballeros de Marte, aún en la más fiera batalla.
-            </p>
-            <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-
-          </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4" id="re">
-              <a href="index.html">
-                <img href="fate" class="img-fluid" src="http://wallpapersmug.com/download/1920x1200/5428a2/anime-girl-altair.jpg" >
-              </a>
-              <h3>Re:Creators</h3>
-              <h4>Argumento</h4>
-
-              <br>
-              <p >La serie es acerca de un estudiante de secundaria llamado Sōta Mizushino que se ve involucrado en una batalla entre varios personajes de manga, anime, y videojuegos que de alguna manera aparecieron en el mundo real.</p>
-              <br>
-              <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4" id="d">
-              <a href="index.html">
-              <img href="fate" class="img-fluid"  src="https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080">
-              </a>
-              <h3>D.Gray-man</h3>
-              <h4>Argumento</h4>
-              <br>  <p >La serie se centra en un final imaginario del siglo XIX en Europa, donde la Congregación de la Sombra lucha con el fin de detener al Conde del Milenio, quien tiene la intención de destruir la humanidad con su ejército de akumas y ryus, armas creadas a partir de las almas de los muertos cuando un familiar </p>
-              <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4" id="ghost">
-              <a href="index.html">
-              <img href="fate" class="img-fluid"  src="http://images6.fanpop.com/image/photos/37400000/Ghost-in-the-Shell-ghost-in-the-shell-37495900-1920-1080.jpg">
-              </a>
-              <h3>Ghost in the Shell </h3>
-              <h4>Argumento</h4>
-              <br>
-              <p>mbientada en el siglo XXI, Ghost in the Shell se presenta en una primera lectura como un thriller futurista de espionaje, al narrar las misiones de Motoko Kusanagi, la mayor a cargo de las operaciones encubiertas de la Sección Policial de Seguridad Pública 9, o simplemente Sección 9, especializada en crímenes tecnológicos.
-              </p>
-              <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4" id="soul">
-              <a href="index.html">
-              <img href="fate" class="img-fluid"  src="https://vignette.wikia.nocookie.net/souleater/images/8/82/Soul-Eater-Wallpaper-Background-Windows-Anime.jpg/revision/latest?cb=20131231175931">
-              </a>
-              <h3>Soul Eater </h3>
-              <h4>Argumento</h4>
-              <br>
-              <p>Los técnicos junto a su compañero arma tienen que recolectar 99 almas de Kishins, las cuales son almas corrompida por el mal o la locura y que están en la lista de shinigami-sama, y el alma de una bruja. Así, las armas y técnicos pasen a ser de la categoría Death Scythe
-              </p>
-              <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-            </div>
         </div>
         <br>
 
@@ -231,8 +164,8 @@
             <h3>Hyouka</h3>
             <h4>Argumento</h4>
             <br><p>Hōtarō Oreki es un estudiante de secundaria cuya vida se basa en la ley del mínimo esfuerzo. Pensaba que todo continuaría así, pero al unirse al Club de Literatura Clásica por petición de su hermana, su vida se verá alterada.</p>
-        <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
-          </div>
+            <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
+            </div>
 
           <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
             <a href="index.html">
@@ -284,5 +217,16 @@
   <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(() =>{
+    $('accion').on('hide');
+    $('#btnaccion').on('click', () => {
+      $('#accion').toggle();
+    });
+    $('#btnmisterio').on('click', () => {
+      $('#misterio').toggle();
+    });
+  });
+  </script>
 
 </html>
