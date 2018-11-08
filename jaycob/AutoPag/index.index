@@ -105,7 +105,6 @@
           <div class="col-md-12">
             <h2 id="h2">Accíon</h2>
           </div>
-
         </div>
         <br>
 
@@ -120,9 +119,9 @@
 
 
 
-          
 
-          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+
+          <div class="col-xs-12 col-md-5 col-lg-3" id="gosick">
             <a href="index.html">
             <img class="img-fluid" src="https://images.alphacoders.com/735/thumb-1920-735429.png"  >
             </a>
@@ -133,7 +132,7 @@
             <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
           </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+          <div class="col-xs-12 col-md-5 col-lg-3" id="gosick">
             <a href="index.html">
             <img class="img-fluid" src="http://images6.fanpop.com/image/photos/33500000/Hyouka-hyouka-33509415-1920-1080.jpg"  >
             </a>
@@ -143,7 +142,7 @@
             <a href="fate/"> <button type="button" class="btn btn-dark" disabled>Detalles</button></a>
             </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-4" id="gosick">
+          <div class="col-xs-12 col-md-5 col-lg-3" id="gosick">
             <a href="index.html">
             <img class="img-fluid" src="https://i.pinimg.com/originals/4c/a8/3d/4ca83dc042478e40080775b36953a511.png"  >
             </a>

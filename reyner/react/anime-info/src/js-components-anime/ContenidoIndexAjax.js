@@ -1,53 +1,36 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Carta } from './Carta';
 import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
-export class ContenidoIndexAjax extends Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      animes: []
-    }
+var anime = [];
+
+$.ajax({
+  method: "GET",
+  url: "http://localhost:3000/src/animes.json",
+  dataType: "json",
+  beforeSend: function () {
+    console.log("Espere porfavor");
+  },
+  success: function (response) {
+    console.log("Los archivos han llegado con exito");
   }
+});
 
-  componentWillMount() {
-    fetch('http://localhost/proyectos/reyner/react/anime-info/src/animes.json')
-      .then((response) => {
-        console.log(response.json)
-        return response.json
-      })
-      .then((anime) => {
-        console.log(anime)
-        this.setState({ animes: anime })
-      })
-  }
+export const ContenidoIndexAjax = (props) => {
+  return (
+    <div>
+      <Lista />
+      <Populares />
+      <div className="row">
 
-  render(){
-    return (
-      <div>
-        <Lista />
-        <Populares />
-        <div className="row">
-          {this.state.animes.map(anime => {
-            return (
-              <Carta
-              src={anime.src}
-              alt={anime.alt}
-              title={anime.title}
-              info={anime.info}
-              masinfo={anime.masinfo}
-              />
-            );
-          })}
-        </div>
-        <Nuevos/>
-        <div className="row">
-
-        </div>
       </div>
-    );
-  }
+      <Nuevos/>
+      <div className="row">
+
+      </div>
+    </div>
+  );
 }

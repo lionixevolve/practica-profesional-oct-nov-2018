@@ -5,6 +5,8 @@ footer{
 }
 #re, #d, #mono, #fate, #gosick, #aldo, #help, #soul, #ghost{
   background-image: url(images/fondo.png);
+  margin: 20px 10px;
+  padding: 30px;
 }
 
 #h2{
