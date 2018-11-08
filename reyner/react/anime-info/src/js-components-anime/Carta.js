@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export const Carta = (props) => {
   return (
@@ -10,7 +11,7 @@ export const Carta = (props) => {
           <p className="card-text text-justify">{props.info}</p>
         </div>
         <div className="card-footer">
-          <a className="btn btn-info text-white" onClick={props.boton} data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></a>
+          <Link to="/naruto" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info<span className="fi-info" title="info" aria-hidden="true"></span></Link>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Contenedor } from './js-components-anime/Contenedor';
 
+
 class AnimeContainer extends Component {
   render() {
     return <Contenedor />

@@ -6,7 +6,7 @@ import { Visto } from './Visto';
 export const ContenidoInfo = (props) => {
   return (
     <div>
-      <Titulo boton={props.onClick}/>
+      <Titulo />
       <Info />
       <Visto />
     </div>

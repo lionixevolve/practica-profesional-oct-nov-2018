@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Titulo = (props) => {
   return (
@@ -6,10 +7,10 @@ export const Titulo = (props) => {
       <div id="lista" className="relleno"></div><hr id="informacion"/>
       <div className="row">
         <div className="col-1">
-          <h5><a id="atras" onClick={props.boton} className="badge badge-dark mt-2 text-white" data-toggle="tooltip" data-placement="top" title="Volver a la pagina anterior"><span className="fi-arrow-left" aria-hidden="true"></span></a></h5>
+          <h5><Link to="/" id="atras" className="badge badge-dark mt-2 text-white" data-toggle="tooltip" data-placement="top" title="Volver a la pagina anterior"><span className="fi-arrow-left" aria-hidden="true"></span></Link></h5>
         </div>
         <div className="col-10">
-          <h3 className="text-center"><img id="IconoNaruto" name="Konoha" src="../imagenes/Naruto-konoha-symbol-i7.png"/> Naruto Shippuden</h3>
+          <h3 className="text-center"><img id="IconoNaruto" alt="Logo konoha" name="Konoha" src="../imagenes/Naruto-konoha-symbol-i7.png"/> Naruto Shippuden</h3>
         </div>
       </div>
       <hr/>
