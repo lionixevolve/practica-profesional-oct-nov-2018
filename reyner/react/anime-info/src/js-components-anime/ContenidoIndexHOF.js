@@ -19,11 +19,12 @@ export const ContenidoIndexHOF = (props) => {
     );
   }
 
-  function etiqueta(array, test) {
+
+  function etiqueta(array, tag) {
     var listaAnimes = [];
 
     for (let element of array) {
-      if (test(element)) {
+      if (tag === element.etiqueta) {
         listaAnimes.push(carta(element));
       }
     }
@@ -35,11 +36,11 @@ export const ContenidoIndexHOF = (props) => {
       <Lista />
       <Populares />
       <div className="row">
-        {etiqueta(animes, animes[].etiqueta === "Populares")}
+        {etiqueta(animes, "Populares")}
       </div>
       <Nuevos/>
       <div className="row">
-
+        {etiqueta(animes, "Nuevos")}
       </div>
     </div>
   );
