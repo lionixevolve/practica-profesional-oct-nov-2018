@@ -1,8 +1,24 @@
 <?php
-  $json = file_get_contenets('animes.json');
-  print_r($json);
-
-  $data = json_decode($json, true);
-  print_r($json)
+class Conexion{
+		private $host = "localhost";
+		private $dbname = "anime";
+		private $user = "root";
+		private $password = "123456";
+		private $conexion = null;
+		public function getConexion(){
+			try{
+				$this->conexion = new PDO(
+									"mysql:host=$this->host; dbname=$this->dbname",
+									$this->user,
+									$this->password
+									);
+			return $this->conexion;
+			}catch(Exception $e){
+				echo $e->getMessage();
+			}finally{
+				$this->conexion = null;
+			}
+		}
+	}
 
  ?>
