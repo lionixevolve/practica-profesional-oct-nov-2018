@@ -171,33 +171,17 @@ function MostrarAnimes(){
            success: function(respuesta) {
             var datos = respuesta;
              console.log(datos);
-             $('#Table').append('<tr><td>Nombre</td>'+
+             $('#Table').append('<tr><td>Logo</td>'+
               '<td>Descripción</td>');
           for(i = 0; i < datos.length; i++){
             $('#Table').append('<tr>'+
-            '<td align="center" style="dislay: none;">' + datos[i].Animes[i].Nombre + '</td>'+
-         	  '<td align="center" style="dislay: none;">' + datos[i].Animes[i].Descripción + '</td>'+'</tr>');
+            '<td align="center" style="dislay: none;" >' + '<div>' +'<img class="img-fluid" src="'  + datos[i].Animes[i].src + '" width="400" height="150">' + '</div>'  + '</td>'+
+            '<td align="center" style="dislay: none;" >' + datos[i].Animes[i].Descripción + '</td>'+
+            '<td align="center" style="dislay: none;" >' + '<a href="' + datos[i].Animes[i].Link + '"><button class="form-control bg-info text-white">Ver</button></a>'  +   '</td>'+'</tr>');
             }
           }
         })
 }
-
-
-
-
-    /* var AnimesDiv = $('#animeslista');
-     $.each(respuesta.data, function(i, elemento){
-      AnimesDiv.append( '<div>' +  '<p>' + elemento.Animes[0].Nombre + ":" + elemento.Animes[0].Descripción + '</p>' + '<img src=' + elemento.Animes[0].src + '></img>'+'</div>');
-    });
-
-
-    error: function() {
-          console.log("No se ha podido obtener la información");
-      }
-    });
-  }*/
-
-
 
 
 </script>
