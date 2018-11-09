@@ -1,8 +1,9 @@
-  [{
-  "Animes":
-  [{ "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Black_Clover_logo_%28English%29.png",
+[{
+	"Animes": [{
+		"Nombre": "Naruto",
 		"Descripción": "Naruto es un manga escrito e ilustrado por Masashi Kishimoto. La obra narra la historia de un ninja adolescente llamado Naruto Uzumaki, quien aspira aconvertirse en Hokage, líder de su aldea, con el propósito de ser reconocido como alguien importante dentro de la aldea y entre sus compañeros.",
-		"Link": "file:///C:/Users/Usuario/Desktop/PaginaPractica2018/jesus/anime/naruto/index.html"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Black_Clover_logo_%28English%29.png",
+    "Link": "file:///C:/Users/Usuario/Desktop/PaginaPractica2018/jesus/anime/naruto/index.html"
 	}, {
 		"src": "https://vignette.wikia.nocookie.net/evangelion/images/d/d9/Evangelion_Logo.png/revision/latest?cb=20140119154112&path-prefix=es",
 		"Descripción": "Anime creado por el estudio Gainax, y dirigido por Hideaki Anno. La historia de la obra se da lugar en un mundo futurista en el que una organización paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y naturaleza desconocidos, los «Ángeles», utilizando para ello mechas humanoides llamados «EVA».",
