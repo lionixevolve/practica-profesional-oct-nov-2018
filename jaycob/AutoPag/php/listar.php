@@ -14,5 +14,6 @@
   }else {
     echo "error";
   }
-
+  $statement->closeCursor();
+  $conexion = NULL;
  ?>
