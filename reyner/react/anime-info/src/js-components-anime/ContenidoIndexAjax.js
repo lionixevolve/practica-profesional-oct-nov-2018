@@ -6,8 +6,6 @@ import { Lista } from './Lista';
 import $ from 'jquery';
 
 
-
-
 export class ContenidoIndexAjax extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +25,7 @@ export class ContenidoIndexAjax extends Component {
             isLoaded: true,
             items: result
           });
-          console.log(this.state.items);
+          console.log("Holaaaaaaaaaaaaa");
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow

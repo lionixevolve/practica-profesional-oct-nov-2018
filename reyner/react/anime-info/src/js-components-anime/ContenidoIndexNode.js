@@ -14,7 +14,7 @@ export const ContenidoIndexNode = (props) => {
   for (let i=0; i<cantidad; i++){
     if(anime[i].etiqueta === "Nuevos"){
       listaNuevos.push(
-        <Carta 
+        <Carta
         src={anime[i].src}
         alt={anime[i].alt}
         title={anime[i].title}
