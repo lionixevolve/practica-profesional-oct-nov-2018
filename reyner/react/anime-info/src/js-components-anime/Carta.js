@@ -11,7 +11,7 @@ export const Carta = (props) => {
           <p className="card-text text-justify">{props.info}</p>
         </div>
         <div className="card-footer">
-          <Link to="/naruto" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info<span className="fi-info" title="info" aria-hidden="true"></span></Link>
+          <Link to="/naruto" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></Link>
         </div>
       </div>
     </div>
