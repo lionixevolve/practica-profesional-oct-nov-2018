@@ -78,7 +78,7 @@ export class ContenidoIndexAjax extends Component {
         <div className="row">
         {listaPopulares}
         </div>
-        <Nuevos/>
+        <Nuevos />
         <div className="row">
         {listaNuevos}
         </div>
