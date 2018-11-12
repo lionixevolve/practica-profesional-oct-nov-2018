@@ -5,8 +5,6 @@ import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
-
-
 export class ContenidoIndexAjax extends Component {
   constructor(props) {
    super(props);
@@ -16,13 +14,13 @@ export class ContenidoIndexAjax extends Component {
  }
 
   componentWillMount() {
-    fetch('http://localhost/proyectos/reyner/react/anime-info/src/animes.json')
+    fetch('http://localhost/proyectos/reyner/react/anime-info/src/animes.json', {mode: 'no-cors'})
       .then((response) => {
-        console.log(response)
         return response.json()
       })
       .then((anime) => {
         this.setState({ animes: anime })
+        console.log(this.state.animes)
       })
   }
 
