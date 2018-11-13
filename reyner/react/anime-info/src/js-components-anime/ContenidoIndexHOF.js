@@ -4,7 +4,7 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 
-var animes = require("../animes.json");
+var animes = require("../animes2.json");
 
 export const ContenidoIndexHOF = (props) => {
 
@@ -14,8 +14,8 @@ export const ContenidoIndexHOF = (props) => {
       src={cartaInfo.src}
       alt={cartaInfo.alt}
       title={cartaInfo.title}
-      info={cartaInfo.info}
-      masinfo={cartaInfo.masinfo}/>
+      description={cartaInfo.description}
+      moreinfo={cartaInfo.moreinfo}/>
     );
   }
 
@@ -24,7 +24,7 @@ export const ContenidoIndexHOF = (props) => {
     var listaAnimes = [];
 
     for (let element of array) {
-      if (tag === element.etiqueta) {
+      if (tag === element.label) {
         listaAnimes.push(carta(element));
       }
     }

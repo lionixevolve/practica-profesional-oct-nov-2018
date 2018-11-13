@@ -5,57 +5,42 @@ import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
-
-export class ContenidoIndexAjax extends Component {
-  constructor(props) {
+export class ContenidoIndexAjax extends Component{
+  constructor(props){
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
       items: []
     };
   }
 
-  componentDidMount() {
-    fetch("http://localhost/proyectos/reyner/react/anime-info/src/animes.json", {mode: 'no-cors'})
-
-      .then(response => response.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: "result"
-          });
-          console.log(this.state.items);
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error: "Horror"
-          });
-          console.log(this.state.error);
-        }
-      )
-  }
+  componentWillMount(){
+    $.ajax({
+      method: "GET",
+      url: "http://192.168.100.62/AutoPag/php/animes.json",
+      dataType: "json",
+      success: function(respuesta) {
+        this.setState({
+          items: respuesta
+        })
+      }.bind(this)
+    });
+  };
 
   render(){
     var animes = this.state.items;
+    var cantidad = animes.length;
     var listaNuevos = [];
     var listaPopulares = [];
-    var cantidad = animes.length;
 
     for (let i=0; i<cantidad; i++){
-      if (animes.etiqueta === "Populares"){
+      if (animes[i].label === "Populares"){
         listaPopulares.push(
           <Carta
           src={animes[i].src}
           alt={animes[i].alt}
           title={animes[i].title}
-          info={animes[i].info}
-          masinfo={animes[i].masinfo}/>
+          description={animes[i].description}
+          moreinfo={animes[i].moreinfo}/>
         );
       } else {
         listaNuevos.push(
@@ -63,25 +48,24 @@ export class ContenidoIndexAjax extends Component {
           src={animes[i].src}
           alt={animes[i].alt}
           title={animes[i].title}
-          info={animes[i].info}
-          masinfo={animes[i].masinfo}/>
+          description={animes[i].description}
+          moreinfo={animes[i].moreinfo}/>
         );
       }
     }
 
-
     return (
       <div>
-        <Lista />
-        <Populares />
-        <div className="row">
-        {listaPopulares}
-        </div>
-        <Nuevos />
-        <div className="row">
-        {listaNuevos}
-        </div>
+      <Lista />
+      <Populares />
+      <div className="row">
+      {listaPopulares}
+      </div>
+      <Nuevos />
+      <div className="row">
+      {listaNuevos}
+      </div>
       </div>
     );
-  }
+  };
 }
