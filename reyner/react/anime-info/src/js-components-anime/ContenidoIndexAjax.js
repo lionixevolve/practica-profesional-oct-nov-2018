@@ -33,9 +33,11 @@ export class ContenidoIndexAjax extends Component{
     var listaPopulares = [];
 
     for (let i=0; i<cantidad; i++){
+      let key = "key-"+i;
       if (animes[i].label === "Populares"){
         listaPopulares.push(
           <Carta
+          key={key}
           src={animes[i].src}
           alt={animes[i].alt}
           title={animes[i].title}
@@ -45,6 +47,7 @@ export class ContenidoIndexAjax extends Component{
       } else {
         listaNuevos.push(
           <Carta
+          key={key}
           src={animes[i].src}
           alt={animes[i].alt}
           title={animes[i].title}

@@ -5,6 +5,9 @@ import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
+var key = "";
+var i = 1;
+
 export class ContenidoIndexAjaxHOF extends Component{
   constructor(props){
     super(props);
@@ -13,6 +16,7 @@ export class ContenidoIndexAjaxHOF extends Component{
     };
     this.carta = this.carta.bind(this);
     this.etiqueta = this.etiqueta.bind(this);
+    this.llave = this.llave.bind(this);
   }
 
   componentWillMount(){
@@ -28,9 +32,14 @@ export class ContenidoIndexAjaxHOF extends Component{
     });
   };
 
+  llave(){
+    return key = "key-"+i;
+  }
+
   carta(cartaInfo) {
     return (
       <Carta
+      key={key}
       src={cartaInfo.src}
       alt={cartaInfo.alt}
       title={cartaInfo.title}
@@ -43,18 +52,17 @@ export class ContenidoIndexAjaxHOF extends Component{
     var listaAnimes = [];
 
     for (let element of array) {
+      this.llave();
       if (tag === element.label) {
         listaAnimes.push(this.carta(element));
       }
+      i++;
     }
     return listaAnimes;
   }
 
   render(){
     var animes = this.state.items;
-    var cantidad = animes.length;
-    var listaPopulares = [];
-    var listaNuevos = [];
 
     return (
       <div>
