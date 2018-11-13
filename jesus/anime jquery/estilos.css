@@ -12,10 +12,14 @@ aside       {    background:#c0392b;     color:#fff;         }
 footer      {    background:#c0392b;     color:#fff;         }﻿
 img         {    vertical-align: center; border-style: none; }
 
+/* Imagenes   */
 
 
+.imgAjax{
+width:50%;}
 
 
+/*  Scroll   */
 #navbar {
 overflow: hidden;
 background-color: #2E2E2E;
