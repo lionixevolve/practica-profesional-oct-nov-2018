@@ -5,12 +5,14 @@ import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
-export class ContenidoIndexAjax extends Component{
+export class ContenidoIndexAjaxHOF extends Component{
   constructor(props){
     super(props);
     this.state = {
       items: []
     };
+    this.carta = this.carta.bind(this);
+    this.etiqueta = this.etiqueta.bind(this);
   }
 
   componentWillMount(){
@@ -26,44 +28,44 @@ export class ContenidoIndexAjax extends Component{
     });
   };
 
+  carta(cartaInfo) {
+    return (
+      <Carta
+      src={cartaInfo.src}
+      alt={cartaInfo.alt}
+      title={cartaInfo.title}
+      description={cartaInfo.description}
+      moreinfo={cartaInfo.moreinfo}/>
+    );
+  }
+
+  etiqueta(array, tag) {
+    var listaAnimes = [];
+
+    for (let element of array) {
+      if (tag === element.label) {
+        listaAnimes.push(this.carta(element));
+      }
+    }
+    return listaAnimes;
+  }
+
   render(){
     var animes = this.state.items;
     var cantidad = animes.length;
-    var listaNuevos = [];
     var listaPopulares = [];
-
-    for (let i=0; i<cantidad; i++){
-      if (animes[i].label === "Populares"){
-        listaPopulares.push(
-          <Carta
-          src={animes[i].src}
-          alt={animes[i].alt}
-          title={animes[i].title}
-          description={animes[i].description}
-          moreinfo={animes[i].moreinfo}/>
-        );
-      } else {
-        listaNuevos.push(
-          <Carta
-          src={animes[i].src}
-          alt={animes[i].alt}
-          title={animes[i].title}
-          description={animes[i].description}
-          moreinfo={animes[i].moreinfo}/>
-        );
-      }
-    }
+    var listaNuevos = [];
 
     return (
       <div>
         <Lista />
         <Populares />
         <div className="row">
-          {listaPopulares}
+          {this.etiqueta(animes, "Populares")}
         </div>
-        <Nuevos />
+        <Nuevos/>
         <div className="row">
-          {listaNuevos}
+          {this.etiqueta(animes, "Nuevos")}
         </div>
       </div>
     );
