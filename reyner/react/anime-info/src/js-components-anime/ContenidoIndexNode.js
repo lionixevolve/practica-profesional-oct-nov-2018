@@ -4,8 +4,9 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 
-var anime = require("../animes2.json");
-
+var anime = [];
+var getJSON = require("get-json");
+request();
 var cantidad = anime.length;
 
 export const ContenidoIndexNode = (props) => {
@@ -48,4 +49,10 @@ export const ContenidoIndexNode = (props) => {
       </div>
     </div>
   );
+}
+
+function request(){
+  getJSON('http://192.168.100.58/anime%20jquery/listaDeAnimes.json', function(error, response){
+    console.log(response);
+  });
 }

@@ -16,7 +16,7 @@ export class ContenidoIndexAjax extends Component{
   componentWillMount(){
     $.ajax({
       method: "GET",
-      url: "http://192.168.100.62/AutoPag/php/animes.json",
+      url: "http://192.168.100.58/anime%20jquery/listaDeAnimes.json",
       dataType: "json",
       success: function(respuesta) {
         this.setState({
