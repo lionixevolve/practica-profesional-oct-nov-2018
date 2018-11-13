@@ -1,70 +1,96 @@
-[{
-	"accion": [{
-		"src": "https://i.ytimg.com/vi/1ErwgLxBNL0/maxresdefault.jpg",
-		"Nombre": "Fate/Stay Night",
-		"Descripción": "Shirō Emiya perdió a su familia hace diez años en un enorme incendio que consumió gran parte de la ciudad de Fuyuki. Atrapado entre las llamas,se da por vencido y acepta su propia muerte, pero un enigmático hombre lo encuentra y lo ayuda.Este hombre,lo adopta ",
-		"Link": ""
-	}, {
-		"src": "https://c.wallhere.com/photos/82/47/Aldnoah_Zero_Slaine_Troyard_Asseylum_Vers_Allusia_Kaizuka_Inaho-94615.jpg!d",
-		"Nombre": "Aldonah zero ",
-		"Descripción": "Un estudiante de bachillerato de la Tierra. Tras la muerte de sus padres, ha estado viviendo al lado de su hermana mayor, Yuki, quien es militar. Es caracterizado por su comportamiento no emotivo y estoico, y es alguien capaz de idear estrategias que ayudan a derrotar a los Caballeros de Marte,aún en la más fiera batalla.",
-		"Link": "  "
-	}, {
-		"src": "http://wallpapersmug.com/download/1920x1200/5428a2/anime-girl-altair.jpg",
-		"Nombre": "Re:Creators ",
-		"Descripción": "La serie es acerca de un estudiante de secundaria llamado Sōta Mizushino que se ve involucrado en una batalla entre varios personajes de manga, anime, y videojuegos que de alguna manera aparecieron en el mundo real.",
-		"Link": "  "
-	}, {
-		"src": "https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080",
-		"Nombre": "D Gray-man ",
-		"Descripción": "La serie se centra en un final imaginario del siglo XIX en Europa, donde la Congregación de la Sombra lucha con el fin de detener al Conde del Milenio, quien tiene la intención de destruir la humanidad con su ejército de akumas y ryus, armas creadas a partir de las almas de los muertos cuando un familiar",
-		"Link": "  "
-	}, {
-		"src": "https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080",
-		"Nombre": "Ghost in the Shell",
-		"Descripción": "ambientada en el siglo XXI, Ghost in the Shell se presenta en una primera lectura como un thriller futurista de espionaje, al narrar las misiones de Motoko Kusanagi, la mayor a cargo de las operaciones encubiertas de la Sección Policial de Seguridad Pública 9, o simplemente Sección 9, especializada en crímenes tecnológicos.",
-		"Link": "  "
-	}, {
-		"src": "https://vignette.wikia.nocookie.net/souleater/images/8/82/Soul-Eater-Wallpaper-Background-Windows-Anime.jpg/revision/latest?cb=20131231175931",
-		"Nombre": "Soul Eater",
-		"Descripción": "Los técnicos junto a su compañero arma tienen que recolectar 99 almas de Kishins, las cuales son almas corrompida por el mal o la locura y que están en la lista de shinigami-sama, y el alma de una bruja. Así, las armas y técnicos pasen a ser de la categoría Death Scythe.",
-		"Link": "  "
-
-	}],
-	"misterio": [{
-		"src": "https://lh3.googleusercontent.com/-ymWf_6nfZZ0/WeMhA4jBWcI/AAAAAAAB2uc/FbbtO2BQcekLLWEMan7B0b8QzmbkIL8gwCJoC/w1920-h1080/Blank%252B_7997e28c1ef6c1f6eb66e64ff7186c9c.jpg",
-		"Nombre": "Monogatari",
-		"Descripción": "La serie de Monogatari se centra en Koyomi Araragi, un estudiante de tercer año de instituto que es ahora casi humano después de haber sido vampiro por un tiempo.",
-		"Link": "  "
-	}, {
-		"src": "https://images.alphacoders.com/226/thumb-1920-226483.jpg",
-		"Nombre": "Gosick",
-		"Descripción": "La serie se centra principalmente en Kazuya y Victorique que tratan de resolver diferentes casos misteriosos. ",
-		"Link": " "
-	}, {
-		"src": "http://getwallpapers.com/wallpaper/full/3/b/1/182671.jpg",
-		"Nombre": "Durarara",
-		"Descripción": "Mikado es testigo de una leyenda urbana en su primer día en la ciudad: el Jinete negro, quien supuestamente es el conductor sin cabeza de una motocicleta de color negro.",
-		"Link": " "
-	}, {
-		"src": "https://images.alphacoders.com/735/thumb-1920-735429.png",
-		"Nombre": "Occultic;Nine",
-		"Descripción": ">Occultic;Nine se centra más, como su propio nombre indica, en el mundo de lo oculto y lo paranormal, contándonos las historias de nueve personas a lo largo y ancho del mundo que experimentan este tipo de sucesos.",
-		"Link": ""
-	}, {
-		"src": "http://images6.fanpop.com/image/photos/33500000/Hyouka-hyouka-33509415-1920-1080.jpg",
-		"Nombre": "Hyouka",
-		"Descripción": "Hōtarō Oreki es un estudiante de secundaria cuya vida se basa en la ley del mínimo esfuerzo. Pensaba que todo continuaría así, pero al unirse al Club de Literatura Clásica por petición de su hermana, su vida se verá alterada.",
-		"Link": " "
-	}, {
-		"src": "https://i.pinimg.com/originals/4c/a8/3d/4ca83dc042478e40080775b36953a511.png",
-		"Nombre": "Yamada kun to 7 nin no majo",
-		"Descripción": "yū Yamada es un estudiante de segundo año en la preparatoria Suzaku. Ryū es un estudiante problemático con una personalidad algo apática, él siempre llega tarde a la escuela",
-		"Link": " "
-	}, {
-		"src": "https://i.pinimg.com/originals/4c/a8/3d/4ca83dc042478e40080775b36953a511.png",
-		"Nombre": "Yamada kun to 7 nin no majo",
-		"Descripción": "yū Yamada es un estudiante de segundo año en la preparatoria Suzaku. Ryū es un estudiante problemático con una personalidad algo apática, él siempre llega tarde a la escuela",
-		"Link": " "
-	}]
-}]
+{
+   "src": "https://i.ytimg.com/vi/1ErwgLxBNL0/maxresdefault.jpg",
+   "alt": "Imagen Fate",
+   "title": "Fate/Stay Night",
+   "description": "Shirō Emiya perdió a su familia hace diez años en un enorme incendio que consumió gran parte de la ciudad de Fuyuki. Atrapado entre las llamas,se da por vencido y acepta su propia muerte, pero un enigmático hombre lo encuentra y lo ayuda.Este hombre,lo adopta ",
+   "moreinfo": "Mas informacion acerca de Fate",
+   "label": "Populares"
+ },
+ {
+    "src": "https://c.wallhere.com/photos/82/47/Aldnoah_Zero_Slaine_Troyard_Asseylum_Vers_Allusia_Kaizuka_Inaho-94615.jpg!d",
+    "alt": "Imagen Aldnoah",
+    "title": "Aldnoah Zero",
+    "description": "Un estudiante de bachillerato de la Tierra. Tras la muerte de sus padres, ha estado viviendo al lado de su hermana mayor, Yuki, quien es militar. Es caracterizado por su comportamiento no emotivo y estoico, y es alguien capaz de idear estrategias que ayudan a derrotar a los Caballeros de Marte,aún en la más fiera batalla.",
+    "moreinfo": "Mas informacion acerca de Aldnoah",
+    "label": "Populares"
+  },
+  {
+     "src": "http://wallpapersmug.com/download/1920x1200/5428a2/anime-girl-altair.jpg",
+     "alt": "Imagen Re:Creators",
+     "title": "Re:Creators",
+     "description": "La serie es acerca de un estudiante de secundaria llamado Sōta Mizushino que se ve involucrado en una batalla entre varios personajes de manga, anime, y videojuegos que de alguna manera aparecieron en el mundo real.",
+     "moreinfo": "Mas informacion acerca de Re:Creators",
+     "label": "Nuevos"
+   },
+   {
+      "src": "https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080",
+      "alt": "Imagen D Gray-man",
+      "title": "D Gray-man",
+      "description": "La serie se centra en un final imaginario del siglo XIX en Europa, donde la Congregación de la Sombra lucha con el fin de detener al Conde del Milenio, quien tiene la intención de destruir la humanidad con su ejército de akumas y ryus, armas creadas a partir de las almas de los muertos cuando un familiar",
+      "moreinfo": "Mas informacion acerca de D Gray-man",
+      "label": "Populares"
+    },
+    {
+       "src": "https://vignette.wikia.nocookie.net/souleater/images/8/82/Soul-Eater-Wallpaper-Background-Windows-Anime.jpg/revision/latest?cb=20131231175931",
+       "alt": "Imagen Soul Eater",
+       "title": "Soul Eater",
+       "description": "Los técnicos junto a su compañero arma tienen que recolectar 99 almas de Kishins, las cuales son almas corrompida por el mal o la locura y que están en la lista de shinigami-sama, y el alma de una bruja. Así, las armas y técnicos pasen a ser de la categoría Death Scythe.",
+       "moreinfo": "Mas informacion acerca de Soul Eater",
+       "label": "Populares"
+     },
+     {
+        "src": "https://i1.wp.com/freakelitex.com/wp-content/uploads/2016/09/img_9552.jpg?fit=1920%2C1080",
+        "alt": "Imagen Ghost in the Shell",
+        "title": "Ghost in the Shell",
+        "description": "ambientada en el siglo XXI, Ghost in the Shell se presenta en una primera lectura como un thriller futurista de espionaje, al narrar las misiones de Motoko Kusanagi, la mayor a cargo de las operaciones encubiertas de la Sección Policial de Seguridad Pública 9, o simplemente Sección 9, especializada en crímenes tecnológicos.",
+        "moreinfo": "Mas informacion acerca de Ghost in the Shell",
+        "label": "Populares"
+      },
+      {
+         "src": "https://lh3.googleusercontent.com/-ymWf_6nfZZ0/WeMhA4jBWcI/AAAAAAAB2uc/FbbtO2BQcekLLWEMan7B0b8QzmbkIL8gwCJoC/w1920-h1080/Blank%252B_7997e28c1ef6c1f6eb66e64ff7186c9c.jpg",
+         "alt": "Imagen Monogatari",
+         "title": "Monogatari",
+         "description": "La serie de Monogatari se centra en Koyomi Araragi, un estudiante de tercer año de instituto que es ahora casi humano después de haber sido vampiro por un tiempo.",
+         "moreinfo": "Mas informacion acerca de Monogatari",
+         "label": "Nuevos"
+       },
+       {
+          "src": "https://images.alphacoders.com/226/thumb-1920-226483.jpg",
+          "alt": "Gosick",
+          "title": "Imagen Gosick",
+          "description": "La serie se centra principalmente en Kazuya, él conoce a Victorique, una misteriosa y bella joven que nunca asiste a las clases y pasa sus días leyendo libros en la biblioteca de la escuela  o tratan de resolver diferentes casos misteriosos.",
+          "moreinfo": "Mas informacion acerca de Gosick",
+          "label": "Populares"
+        },
+        {
+           "src": "http://getwallpapers.com/wallpaper/full/3/b/1/182671.jpg",
+           "alt": "Imagen Durarara",
+           "title": "Durarara",
+           "description": "Mikado es testigo de una leyenda urbana en su primer día en la ciudad: el Jinete negro, quien supuestamente es el conductor sin cabeza de una motocicleta de color negro.",
+           "moreinfo": "Mas informacion acerca de Durarara",
+           "label": "Populares"
+         },
+         {
+            "src": "https://images.alphacoders.com/735/thumb-1920-735429.png",
+            "alt": "Imagen Occultic;Nine",
+            "title": "Occultic;Nine",
+            "description": "Occultic;Nine se centra más, como su propio nombre indica, en el mundo de lo oculto y lo paranormal, contándonos las historias de nueve personas a lo largo y ancho del mundo que experimentan este tipo de sucesos",
+            "moreinfo": "Mas informacion acerca de Occultic;Nine",
+            "label": "Nuevos"
+          },
+          {
+             "src": "http://images6.fanpop.com/image/photos/33500000/Hyouka-hyouka-33509415-1920-1080.jpg",
+             "alt": "Imagen Hyouka",
+             "title": "Hyouka",
+             "description": "Hōtarō Oreki es un estudiante de secundaria cuya vida se basa en la ley del mínimo esfuerzo. Pensaba que todo continuaría así, pero al unirse al Club de Literatura Clásica por petición de su hermana, su vida se verá alterada.",
+             "moreinfo": "Mas informacion acerca de Hyouka",
+             "label": "Nuevos"
+           },
+           {
+              "src": "https://i.pinimg.com/originals/4c/a8/3d/4ca83dc042478e40080775b36953a511.png",
+              "alt": "Imagen Yamada kun to 7 nin no majo",
+              "title": "Yamada kun to 7 nin no majo",
+              "description": "yū Yamada él siempre llega tarde a la escuela su vida es lo que considerarían los demás como un agujero sin salida. Mientras que por otro lado, la hermosa Shiraishi Urara, es todo lo contrario, ella es la más brillante alumna de la preparatoria Suzaku, seria, amable y diligente. Un día, después de un incidente sin precedentes, sus cuerpos son cambiados!, Ryū termina en el cuerpo de Urara, y Urara en el de Ryū.",
+              "moreinfo": "Mas informacion acerca de ",
+              "label": "Populares"
+            }
