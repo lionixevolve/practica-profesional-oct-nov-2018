@@ -8,10 +8,10 @@ export const Carta = (props) => {
         <img className="card-img-top img-fluid" src={props.src} alt={props.alt}/>
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
-          <p className="card-text text-justify">{props.info}</p>
+          <p className="card-text text-justify">{props.description}</p>
         </div>
         <div className="card-footer">
-          <Link to="/naruto" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title={props.masinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></Link>
+          <Link to="/naruto" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title={props.moreinfo}>Mas info <span className="fi-info" title="info" aria-hidden="true"></span></Link>
         </div>
       </div>
     </div>

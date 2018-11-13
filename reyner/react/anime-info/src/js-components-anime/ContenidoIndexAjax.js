@@ -18,14 +18,15 @@ export class ContenidoIndexAjax extends Component {
 
   componentDidMount() {
     fetch("http://localhost/proyectos/reyner/react/anime-info/src/animes.json", {mode: 'no-cors'})
-      .then(res => res.json())
+
+      .then(response => response.json())
       .then(
         (result) => {
           this.setState({
             isLoaded: true,
-            items: result
+            items: "result"
           });
-          console.log("Holaaaaaaaaaaaaa");
+          console.log(this.state.items);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -33,7 +34,7 @@ export class ContenidoIndexAjax extends Component {
         (error) => {
           this.setState({
             isLoaded: true,
-            error: "Error"
+            error: "Horror"
           });
           console.log(this.state.error);
         }
