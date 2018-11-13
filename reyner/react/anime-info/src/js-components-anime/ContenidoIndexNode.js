@@ -4,7 +4,7 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 
-var anime = require("../animes.json");
+var anime = require("../animes2.json");
 
 var cantidad = anime.length;
 
@@ -12,14 +12,14 @@ export const ContenidoIndexNode = (props) => {
   var listaNuevos = [];
   var listaPopulares = [];
   for (let i=0; i<cantidad; i++){
-    if(anime[i].etiqueta === "Nuevos"){
+    if(anime[i].label === "Nuevos"){
       listaNuevos.push(
         <Carta
         src={anime[i].src}
         alt={anime[i].alt}
         title={anime[i].title}
-        info={anime[i].info}
-        masinfo={anime[i].masinfo}/>
+        description={anime[i].description}
+        moreinfo={anime[i].moreinfo}/>
       );
     } else {
       listaPopulares.push(
@@ -27,8 +27,8 @@ export const ContenidoIndexNode = (props) => {
         src={anime[i].src}
         alt={anime[i].alt}
         title={anime[i].title}
-        info={anime[i].info}
-        masinfo={anime[i].masinfo}/>
+        description={anime[i].description}
+        moreinfo={anime[i].moreinfo}/>
       );
     }
   }

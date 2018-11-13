@@ -1,0 +1,72 @@
+[{
+   "src": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/07/05/14992391686830.jpg",
+   "alt": "Imagen Naruto",
+   "title": "Naruto Shippuden",
+   "description": "Naruto ha pasado estos últimos 3 años adiestrando al lado de Jiraiya...",
+   "moreinfo": "Mas informacion acerca de Naruto",
+   "label": "Populares"
+ },
+
+ {
+   "src": "https://vignette.wikia.nocookie.net/onepiece/images/7/7b/Wake_up%21.png/revision/latest?cb=20140119063210&path-prefix=es",
+   "alt": "Imagen One piece",
+   "title": "One piece",
+   "description": "Riqueza, fama, poder... un hombre había obtenido todo en este mundo, era el Rey de los Piratas Gold Roger...",
+   "moreinfo": "Mas informacion acerca de One piece",
+   "label": "Populares"
+ },
+
+ {
+   "src": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2018/02/dragon-ball-grupo.jpg?itok=0ULuYU6b",
+   "alt": "Imagen DBZ",
+   "title": "Dragon Ball Z",
+   "description": "La historia de Dragon Ball Z se divide en cuatro ramas centrales, repartidas en un total de 291 episodios...",
+   "moreinfo": "Mas informacion acerca de DBZ",
+   "label": "Populares"
+ },
+
+ {
+   "src": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2016/07/bleach-manga_3.jpg?itok=e9lqhx3c",
+   "alt": "Imagen Bleach",
+   "title": "Bleach",
+   "description": "La serie narra las aventuras de Kurosaki Ichigo, un adolescente que accidentalmente absorbe los poderes...",
+   "moreinfo": "Mas informacion acerca de Bleach",
+   "label": "Populares"
+ },
+
+ {
+   "src": "https://ibdp.videovore.com/show_art/19180?size=2048x768",
+   "alt": "Imagen Zatch Bell",
+   "title": "Zatch Bell",
+   "description": "Cada mil años, cien niños mamodo se dirigen al mundo humano, en donde se realiza una batalla para decidir el rey del mundo mamodo...",
+   "moreinfo": "Mas informacion acerca de Zatch Bell",
+   "label": "Nuevos"
+ },
+
+ {
+   "src": "http://static.t13.cl/images/sizes/1200x675/1482621435-czdttqgxgaety7k.jpg",
+   "alt": "Imagen SNK",
+   "title": "Shingeki no Kyojin",
+   "description": "Hace varios años, los humanos fueron casi exterminados por los titanes. Los titanes son increíblemente altos, parece que no tienen inteligencia...",
+   "moreinfo": "Mas informacion acerca de Shingeki",
+   "label": "Nuevos"
+ },
+
+ {
+   "src": "https://hipertextual.com/files/2016/05/Boku-no-Hero-Academia-670x410.jpg",
+   "alt": "Imagen Boku no Hero",
+   "title": "Boku no Hero",
+   "description": "Las personas no nacen iguales, hecho que Midoriya Izuku corroboró cuando sus compañeros de clase se metían con él...",
+   "moreinfo": "Mas informacion acerca de Boku no Hero",
+   "label": "Nuevos"
+ },
+
+ {
+   "src": "http://images6.fanpop.com/image/photos/36900000/Noragami-Yato-Yukine-Hiyori-noragami-36931180-1920-1080.jpg",
+   "alt": "Imagen Noragami",
+   "title": "Noragami",
+   "description": "A veces encontraras un número de teléfono pintado de rojo en las paredes, es del autoproclamado Dios Yato...",
+   "moreinfo": "Mas informacion acerca de Noragami",
+   "label": "Nuevos"
+ }
+]
