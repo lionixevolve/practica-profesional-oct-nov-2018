@@ -10,6 +10,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/smooth-scroll.polyfills.min.js"></script>
   <script src="js/llamadaajax.js" ></script>
+
+
   <script>
           ar scroll = new SmoothScroll('a[href*="#"]', {
 
@@ -152,7 +154,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
  </section>
 
 <div id="animeslista" class="table-responsive">
-<table id="Table" cellspacing="30" cellpadding="30"></table>
+<table id="Table" cellspacing="20" cellpadding="30"></table>
 
 </div> <!--fin animes lista -->
 
@@ -182,6 +184,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 
 
+
 <div id="estrenoslista"  class="table-responsive">
 <table id="TableEstrenos" cellspacing="30" cellpadding="30"></table>
 
@@ -189,7 +192,6 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 </div> <!-- Cierra div estrenoslista -->
 
 <script>
-    MostrarEstrenos();
     $('#TableEstrenos').hide();
     $('#mostrarestrenoslista').on('click', () => {
       $('#TableEstrenos').toggle('slow', );
