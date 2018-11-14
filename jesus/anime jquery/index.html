@@ -148,22 +148,41 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
      <br>
    </article>
    <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-    <button class="form-control bg-info text-white" id="mostrarAnimeLista">Mostrar </button>
+  <!--  <button class="form-control bg-info text-white" id="mostrarAnimeLista">Mostrar </button> -->
+    <button type="button" class="btn btn-primary bg-info" id="reyner">Ver Lista Reyner</button>
+    <button type="button" class="btn btn-primary bg-info" id="jaycob">Ver Lista Jaycob</button>
+    <button type="button" class="btn btn-primary bg-info" id="jesus">Ver Lista Jesús</button>
      <br>
    </article>
  </section>
 
 <div id="animeslista" class="table-responsive">
-<table id="Table" cellspacing="20" cellpadding="30"></table>
+<table id="TableReyner" cellspacing="20" cellpadding="30"></table>
+<table id="TableJaycob" cellspacing="20" cellpadding="30"></table>
+<table id="TableJesus" cellspacing="20" cellpadding="30"></table>
 
 </div> <!--fin animes lista -->
 
 <script>
-    MostrarAnimes();
-    $('#Table').hide();
-    $('#mostrarAnimeLista').on('click', () => {
-      $('#Table').toggle('slow', );
+    $('#TableReyner').append(MostrarAnimesReyner() );
+    $('#TableReyner').hide();
+    $('#reyner').on('click', () => {
+      $('#TableReyner').toggle('slow', );
     });
+
+
+    $('#TableJaycob').append(MostrarAnimesJaycob() );
+    $('#TableJaycob').hide();
+    $('#jaycob').on('click', () => {
+      $('#TableJaycob').toggle('slow', );
+    });
+
+    $('#TableJesus').append(MostrarAnimesJesus() );
+    $('#TableJesus').hide();
+    $('#jesus').on('click', () => {
+      $('#TableJesus').toggle('slow', );
+    });
+
 </script>
 
 
