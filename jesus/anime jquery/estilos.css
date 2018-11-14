@@ -7,7 +7,7 @@ h2          {    background:#c0392b;     color:#fff;         }
 h3          {                                                }
 h4          {    background:#c0392b;     color:#fff;         }
 h5          {    font-size: 40px;        color:#fff;         }
-h6          {    font-size: 60px                             }
+h6          {    font-size: 30px                             }
 aside       {    background:#c0392b;     color:#fff;         }
 footer      {    background:#c0392b;     color:#fff;         }﻿
 img         {    vertical-align: center; border-style: none; }
@@ -15,8 +15,26 @@ img         {    vertical-align: center; border-style: none; }
 /* Imagenes   */
 
 
-.imgAjax{
-width:50%;}
+
+@media screen and (min-width: 769px) {
+    .imgAjax{
+      max-height: 45%;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .imgAjax{
+    max-height: 40%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .imgAjax{
+    max-height: 15%;
+  }
+}
+
+
 
 
 /*  Scroll   */
