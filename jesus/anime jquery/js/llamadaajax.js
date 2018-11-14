@@ -3,6 +3,7 @@
 //jaycob   http://192.168.100.62/AutoPag/php/animes.json
 // jesus   http://192.168.100.58/anime%20jquery/listaDeAnimes.json
 
+
 function MostrarAnimesJesus(){
     $.ajax({
      method: 'GET',
@@ -18,7 +19,7 @@ function MostrarAnimesJesus(){
                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
             }
               else {
-                $('#TableEstrenos').append('<tr>'+
+                $('#TableJesusNuevos').append('<tr>'+
                 '<td align="center" style="dislay: none;" >' +
                 '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
@@ -44,7 +45,7 @@ function MostrarAnimesJesus(){
                    datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
               }
                 else {
-                  $('#TableEstrenos').append('<tr>'+
+                  $('#TableReynerNuevos').append('<tr>'+
                   '<td align="center" style="dislay: none;" >' +
                   '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
                    datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
@@ -70,7 +71,7 @@ function MostrarAnimesJesus(){
                      datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
                 }
                   else {
-                    $('#TableEstrenos').append('<tr>'+
+                    $('#TableJaycobNuevos').append('<tr>'+
                     '<td align="center" style="dislay: none;" >' +
                     '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
                      datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')

@@ -167,22 +167,26 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
     $('#TableReyner').append(MostrarAnimesReyner() );
     $('#TableReyner').hide();
     $('#reyner').on('click', () => {
+      $('#TableJaycob').hide();
+      $('#TableJesus').hide();
       $('#TableReyner').toggle('slow', );
     });
-
 
     $('#TableJaycob').append(MostrarAnimesJaycob() );
     $('#TableJaycob').hide();
     $('#jaycob').on('click', () => {
+      $('#TableReyner').hide();
+      $('#TableJesus').hide();
       $('#TableJaycob').toggle('slow', );
     });
 
     $('#TableJesus').append(MostrarAnimesJesus() );
     $('#TableJesus').hide();
     $('#jesus').on('click', () => {
+      $('#TableJaycob').hide();
+      $('#TableReyner').hide();
       $('#TableJesus').toggle('slow', );
     });
-
 </script>
 
 
@@ -193,7 +197,9 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
      <br>
    </article>
    <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-    <button class="form-control bg-info text-white" id="mostrarestrenoslista">Mostrar </button>
+       <button type="button" class="btn btn-primary bg-info" id="reynerNuevos">Ver Lista Reyner</button>
+       <button type="button" class="btn btn-primary bg-info" id="jaycobNuevos">Ver Lista Jaycob</button>
+       <button type="button" class="btn btn-primary bg-info" id="jesusNuevos">Ver Lista Jesús</button>
      <br>
    </article>
  </section>
@@ -202,16 +208,35 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 
 <div id="estrenoslista"  class="table-responsive">
-<table id="TableEstrenos" cellspacing="30" cellpadding="30"></table>
+  <table id="TableReynerNuevos" cellspacing="20" cellpadding="30"></table>
+  <table id="TableJaycobNuevos" cellspacing="20" cellpadding="30"></table>
+  <table id="TableJesusNuevos" cellspacing="20" cellpadding="30"></table>
 
 
 </div> <!-- Cierra div estrenoslista -->
 
 <script>
-    $('#TableEstrenos').hide();
-    $('#mostrarestrenoslista').on('click', () => {
-      $('#TableEstrenos').toggle('slow', );
-    });
+  $('#TableReynerNuevos').hide();
+  $('#reynerNuevos').on('click', () => {
+    $('#TableJaycobNuevos').hide();
+    $('#TableJesusNuevos').hide();
+    $('#TableReynerNuevos').toggle('slow', );
+  });
+
+  $('#TableJaycobNuevos').hide();
+  $('#jaycobNuevos').on('click', () => {
+    $('#TableReynerNuevos').hide();
+    $('#TableJesusNuevos').hide();
+    $('#TableJaycobNuevos').toggle('slow', );
+  });
+
+  $('#TableJesusNuevos').hide();
+  $('#jesusNuevos').on('click', () => {
+    $('#TableReynerNuevos').hide();
+    $('#TableJaycobNuevos').hide();
+    $('#TableJesusNuevos').toggle('slow', );
+  });
+
 </script>
 
 </div> <!-- estrenos-->
