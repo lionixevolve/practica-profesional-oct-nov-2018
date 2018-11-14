@@ -9,7 +9,7 @@ export const Indice = () =>{
   return (
     <div>
       <NavBar estado="Indice"/>
-      <ContenidoIndexAjaxHOF />
+      <ContenidoIndexAjax />
     </div>
   );
 }

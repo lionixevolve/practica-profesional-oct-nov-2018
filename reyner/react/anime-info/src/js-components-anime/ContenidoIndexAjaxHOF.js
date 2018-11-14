@@ -22,8 +22,9 @@ export class ContenidoIndexAjaxHOF extends Component{
   componentWillMount(){
     $.ajax({
       method: "GET",
-      url: "http://192.168.100.62/AutoPag/php/animes.json",
+      url: "http://192.168.100.56/AutoPag/php/animes.json",
       dataType: "json",
+      mode: "cors",
       success: function(respuesta) {
         this.setState({
           items: respuesta
