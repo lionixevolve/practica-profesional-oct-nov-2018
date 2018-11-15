@@ -59,7 +59,7 @@ function MostrarAnimesJesus(){
     function MostrarAnimesJaycob(){
         $.ajax({
          method: 'GET',
-         url: 'http://192.168.100.62/AutoPag/php/animes.json',
+         url: 'http://192.168.100.54/AutoPag/php/animes.json',
          dataType: "json",
                  success: function(respuesta) {
                   var datos = respuesta;
