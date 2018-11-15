@@ -4,7 +4,7 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 
-var animes = require("../animes2.json");
+var animes = require("../animes.json");
 var key = "";
 var i = 1;
 

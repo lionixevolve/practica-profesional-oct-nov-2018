@@ -16,7 +16,7 @@ export class ContenidoIndexAjax extends Component{
   componentWillMount(){
     $.ajax({
       method: "GET",
-      url: "http://192.168.100.53/proyectos/reyner/react/anime-info/src/animes2.json",
+      url: "http://192.168.100.53/proyectos/animateca/appAnimateca/src/animes.json",
       dataType: "json",
       success: function(respuesta) {
         this.setState({
