@@ -4,12 +4,14 @@
 // jesus   http://192.168.100.58/anime%20jquery/listaDeAnimes.json
 
 
+
+
 function MostrarAnimesJesus(){
     $.ajax({
      method: 'GET',
-     url: 'http://192.168.100.58/anime%20jquery/listaDeAnimes.json',
+     url: 'http://192.168.100.51/anime%20jquery/listaDeAnimes.json',
      dataType: "json",
-             success: function(respuesta) {
+      success: function(respuesta) {
               var datos = respuesta;
             for(i = 0; i < datos.length; i++){
               if (datos[i].label == "Populares"){
@@ -33,7 +35,7 @@ function MostrarAnimesJesus(){
   function MostrarAnimesReyner(){
       $.ajax({
        method: 'GET',
-       url: 'http://192.168.100.51/proyectos/reyner/react/anime-info/src/animes2.json',
+       url: 'http://192.168.100.53/proyectos/reyner/react/anime-info/src/animes2.json',
        dataType: "json",
                success: function(respuesta) {
                 var datos = respuesta;

@@ -1,0 +1,13 @@
+import React from 'react';
+import { NavBar2 } from './NavBar2';
+
+export const NavBar = (props) => {
+  return (
+    <div className="container-fluid fixed-top margen">
+      <nav id="navbarAnimeInforma" className="navbar navbar-light bg-light">
+        <a className="navbar-brand fantasia letra-grande" href="#lista">Animateca</a>
+        <NavBar2 estado={props.estado}/>
+      </nav>
+    </div>
+  );
+}
