@@ -60,54 +60,17 @@ function CargarAnimeJaycob() {
 
 //Agrega los animes
 
-function AgregarAnimeJesus(response){
+function AgregarAnimeall(response){
    var datos=response;
   for(i = 0; i < datos.length; i++){
     if (datos[i].label == "Populares"){
-      $('#TableJesus').append('<tr>'+
+      $('#Tableall').append('<tr>'+
       '<td align="center" style="dislay: none;" >' +
       '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
        datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
   }
     else {
-      $('#TableJesusNuevos').append('<tr>'+
-      '<td align="center" style="dislay: none;" >' +
-      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
-  }
-}
-}
-
-function AgregarAnimeReyner(response){
-   var datos=response;
-  for(i = 0; i < datos.length; i++){
-    if (datos[i].label == "Populares"){
-      $('#TableReyner').append('<tr>'+
-      '<td align="center" style="dislay: none;" >' +
-      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
-  }
-    else {
-      $('#TableReynerNuevos').append('<tr>'+
-      '<td align="center" style="dislay: none;" >' +
-      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
-  }
-}
-}
-
-
-function AgregarAnimeJaycob(response){
-   var datos=response;
-  for(i = 0; i < datos.length; i++){
-    if (datos[i].label == "Populares"){
-      $('#TableJaycob').append('<tr>'+
-      '<td align="center" style="dislay: none;" >' +
-      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
-  }
-    else {
-      $('#TableJaycobNuevos').append('<tr>'+
+      $('#TableallNuevos').append('<tr>'+
       '<td align="center" style="dislay: none;" >' +
       '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
        datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
