@@ -2,6 +2,7 @@
 // Reyner  http://192.168.100.51/proyectos/reyner/react/anime-info/src/animes2.json
 //jaycob   http://192.168.100.62/AutoPag/php/animes.json
 // jesus   http://192.168.100.58/anime%20jquery/listaDeAnimes.json
+toastr.options.positionClass = 'toast-bottom-right',
 toastr.options.timeOut = '2000';
 
 function CargarAnimeJesus() {
