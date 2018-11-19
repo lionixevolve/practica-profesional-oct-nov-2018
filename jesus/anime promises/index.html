@@ -187,14 +187,18 @@ $('#TableReyner').append(MostrarAnimesReyner() );
       $('#TableJaycob').toggle('slow', );
     }); */
 
-    $('#TableJesus').append(MostrarAnimesJesus() );
+
     $('#TableJesus').hide();
     $('#jesus').on('click', () => {
-
+      CargarAnime()
+        .then(response => AgregarAnime(response))
+        .catch(err => console.log(err));
       $('#TableJaycob').hide();
       $('#TableReyner').hide();
       $('#TableJesus').toggle('slow', );
    });
+
+
 
 
 
