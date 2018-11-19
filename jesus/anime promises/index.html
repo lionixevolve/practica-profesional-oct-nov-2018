@@ -233,7 +233,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 $('#TableallNuevos').hide();
    $('#reynerNuevos').on('click', () => {
-     $("#Tableall td").parent().remove();
+      $('#Tableall').hide();
     $("#TableallNuevos td").parent().remove();
      $('#TableallNuevos').hide();
      setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
@@ -244,7 +244,7 @@ $('#TableallNuevos').hide();
 
 
  $('#jaycobNuevos').on('click', () => {
-   $("#Tableall td").parent().remove();
+     $('#Tableall').hide();
    $("#TableallNuevos td").parent().remove();
     $('#TableallNuevos').hide();
     setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
@@ -255,7 +255,7 @@ $('#TableallNuevos').hide();
 
 
   $('#jesusNuevos').on('click', () => {
-    $("#Tableall td").parent().remove();
+    $('#Tableall').hide();
     $("#TableallNuevos td").parent().remove();
      $('#TableallNuevos').hide();
       setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
