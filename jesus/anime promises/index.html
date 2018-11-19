@@ -170,15 +170,14 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 <script>
 
 
-/*
-$('#TableReyner').append(MostrarAnimesReyner() );
     $('#TableReyner').hide();
-    $('#reyner').on('click', () => {
+     $('#reyner').on('click', () => {
+        setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
+        setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente");  $('#TableReyner').toggle('slow', );  }, 2000);
       $('#TableJaycob').hide();
       $('#TableJesus').hide();
-      $('#TableReyner').toggle('slow', );
-    });
-
+});
+/*
     $('#TableJaycob').append(MostrarAnimesJaycob() );
     $('#TableJaycob').hide();
     $('#jaycob').on('click', () => {
@@ -187,18 +186,16 @@ $('#TableReyner').append(MostrarAnimesReyner() );
       $('#TableJaycob').toggle('slow', );
     }); */
 
-
     $('#TableJesus').hide();
     $('#jesus').on('click', () => {
-      CargarAnime()
-        .then(response => AgregarAnime(response))
-        .catch(err => console.log(err));
-      $('#TableJaycob').hide();
-      $('#TableReyner').hide();
-      $('#TableJesus').toggle('slow', );
-   });
+        setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
+        setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente");  $('#TableJesus').show('slow', );  }, 2000);
+     $('#TableJaycob').hide();
+     $('#TableReyner').hide();
+ });
 
-
+ CargarAnimeReyner().then(response => { AgregarAnimeReyner(response);});
+ CargarAnimeJesus().then(response => { AgregarAnimeJesus(response);});
 
 
 
