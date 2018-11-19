@@ -153,9 +153,10 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
    </article>
    <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
   <!--  <button class="form-control bg-info text-white" id="mostrarAnimeLista">Mostrar </button> -->
-    <button type="button" class="btn btn-primary bg-info" id="reyner">Ver Lista Reyner</button>
-    <button type="button" class="btn btn-primary bg-info" id="jaycob">Ver Lista Jaycob</button>
-    <button type="button" class="btn btn-primary bg-info" id="jesus">Ver Lista Jesús</button>
+    <button type="button" class="btn btn-sm btn-primary bg-info" id="reyner">Ver Lista Reyner</button>
+    <button type="button" class="btn btn-sm btn-primary bg-info" id="jaycob">Ver Lista Jaycob</button>
+    <button type="button" class="btn btn-sm btn-primary bg-info" id="jesus">Ver Lista Jesús</button>
+    <button type="button" class="btn btn-sm btn-primary bg-info" id="todos">Cargar Todos</button>
 
      <br>
    </article>
@@ -170,35 +171,22 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 <script>
 
-  $('#Tableall').hide();
      $('#reyner').on('click', () => {
-      $("#Tableall td").parent().remove();
-       $('#Tableall').hide();
-       setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
-       CargarAnimeReyner().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
-           setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-       setTimeout(function(){ $('#Tableall').show('slow', );  }, 2000);
+       $("#Tableall td").parent().remove();
+       $("#TableallNuevos td").parent().remove();
+         CargarAnimeReyner();
      });
 
 
    $('#jaycob').on('click', () => {
-     $("#Tableall td").parent().remove();
-      $('#Tableall').hide();
-      setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
-      CargarAnimeJaycob().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)      }).catch(function(){
-          setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-      setTimeout(function(){ $('#Tableall').show('slow', );  }, 2000);
-  });
 
+
+  });
 
     $('#jesus').on('click', () => {
       $("#Tableall td").parent().remove();
-       $('#Tableall').hide();
-        setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
-        CargarAnimeJesus().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
-            setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)
-          });
-        setTimeout(function(){ $('#Tableall').show('slow', );  }, 2000);
+      $("#TableallNuevos td").parent().remove();
+        CargarAnimeJesus();
  });
 
 
@@ -212,64 +200,16 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
      <br>
    </article>
    <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-       <button type="button" class="btn btn-primary bg-info" id="reynerNuevos">Ver Lista Reyner</button>
-       <button type="button" class="btn btn-primary bg-info" id="jaycobNuevos">Ver Lista Jaycob</button>
-       <button type="button" class="btn btn-primary bg-info" id="jesusNuevos">Ver Lista Jesús</button>
+
+
      <br>
    </article>
  </section>
 
 
-
-
 <div id="estrenoslista"  class="table-responsive">
-
     <table id="TableallNuevos" cellspacing="20" cellpadding="30"></table>
-
-
 </div> <!-- Cierra div estrenoslista -->
-
-<script>
-
-$('#TableallNuevos').hide();
-   $('#reynerNuevos').on('click', () => {
-      $('#Tableall').hide();
-    $("#TableallNuevos td").parent().remove();
-     $('#TableallNuevos').hide();
-     setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
-     CargarAnimeReyner().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
-         setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-     setTimeout(function(){ $('#TableallNuevos').show('slow', );  }, 2000);
-   });
-
-
- $('#jaycobNuevos').on('click', () => {
-     $('#Tableall').hide();
-   $("#TableallNuevos td").parent().remove();
-    $('#TableallNuevos').hide();
-    setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
-    CargarAnimeJaycob().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)      }).catch(function(){
-        setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-    setTimeout(function(){ $('#TableallNuevos').show('slow', );  }, 2000);
-});
-
-
-  $('#jesusNuevos').on('click', () => {
-    $('#Tableall').hide();
-    $("#TableallNuevos td").parent().remove();
-     $('#TableallNuevos').hide();
-      setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
-      CargarAnimeJesus().then(response => { AgregarAnimeall(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
-          setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)
-        });
-      setTimeout(function(){ $('#TableallNuevos').show('slow', );  }, 2000);
-});
-
-
-
-
-</script>
-
 </div> <!-- estrenos-->
 
     </div> <!-- div general de todos los animes -->
