@@ -5,6 +5,8 @@ import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
 
+toastr.options.timeOut = "3000";
+
 export class ContenidoIndexAjax extends Component{
   constructor(props){
     super(props);
@@ -14,16 +16,24 @@ export class ContenidoIndexAjax extends Component{
   }
 
   componentWillMount(){
-    $.ajax({
-      method: "GET",
-      url: "http://192.168.100.53/proyectos/animateca/appAnimateca/src/animes.json",
-      dataType: "json",
-      success: function(respuesta) {
-        this.setState({
-          items: respuesta
-        })
-      }.bind(this)
-    });
+    new Promise((resolve, reject) => {
+      $.ajax({
+        method: "GET",
+        url: "http://192.168.100.53/proyectos/animateca/appAnimateca/src/animes.json",
+        dataType: "json",
+        success: function(respuesta) {
+          setTimeout( function(){ toastr["info"]("Cargando") }, 0)
+          setTimeout( function(){
+            toastr["success"]("Cargando con exito");
+            resolve(this.setState({
+              items: respuesta
+            }))}, 3000)
+        }.bind(this),
+        error: function(){
+          reject(toastr["error"]("Error 404 Not Found"))
+        }
+      });
+    })
   };
 
   render(){
