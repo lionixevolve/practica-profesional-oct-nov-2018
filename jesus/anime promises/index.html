@@ -156,6 +156,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
     <button type="button" class="btn btn-primary bg-info" id="reyner">Ver Lista Reyner</button>
     <button type="button" class="btn btn-primary bg-info" id="jaycob">Ver Lista Jaycob</button>
     <button type="button" class="btn btn-primary bg-info" id="jesus">Ver Lista Jesús</button>
+
      <br>
    </article>
  </section>
@@ -169,39 +170,40 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 <script>
 
-
     $('#TableReyner').hide();
      $('#reyner').on('click', () => {
-        setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
-        CargarAnimeReyner().then(response => { AgregarAnimeReyner(response);});
-        setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente");  $('#TableReyner').toggle('slow', );  }, 2000);
-      $('#TableJaycob').hide();
-      $('#TableJesus').hide();
-});
-
+      $("#TableReyner td").parent().remove();
+       setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
+       CargarAnimeReyner().then(response => { AgregarAnimeReyner(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
+           setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
+       setTimeout(function(){ $('#TableReyner').show('slow', );  }, 2000);
+       $('#TableJaycob').hide();
+       $('#TableJesus').hide();
+     });
 
   $('#TableJaycob').hide();
    $('#jaycob').on('click', () => {
-      setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
-      CargarAnimeJaycob().then(response => { AgregarAnimeJaycob(response);});
-      setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente");  $('#TableJaycob').toggle('slow', );  }, 2000);
+     $("#TableJaycob td").parent().remove();
+      setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
+      CargarAnimeJaycob().then(response => { AgregarAnimeJaycob(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)      }).catch(function(){
+          setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
+      setTimeout(function(){ $('#TableJaycob').show('slow', );  }, 2000);
     $('#TableReyner').hide();
     $('#TableJesus').hide();
   });
 
 
-
-
     $('#TableJesus').hide();
     $('#jesus').on('click', () => {
+      $("#TableJesus td").parent().remove();
         setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
-        CargarAnimeJesus().then(response => { AgregarAnimeJesus(response);});
-        setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente");  $('#TableJesus').show('slow', );  }, 2000);
+        CargarAnimeJesus().then(response => { AgregarAnimeJesus(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
+            setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)
+          });
+        setTimeout(function(){ $('#TableJesus').show('slow', );  }, 2000);
      $('#TableJaycob').hide();
      $('#TableReyner').hide();
  });
-
-
 
 
 </script>
@@ -233,27 +235,43 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 </div> <!-- Cierra div estrenoslista -->
 
 <script>
+$('#TableReynerNuevos').hide();
+ $('#reynerNuevos').on('click', () => {
+  $("#TableReynerNuevos td").parent().remove();
+   setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
+   CargarAnimeReyner().then(response => { AgregarAnimeReyner(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
+       setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
+   setTimeout(function(){ $('#TableReynerNuevos').show('slow', );  }, 2000);
+   $('#TableJaycobNuevos').hide();
+   $('#TableJesusNuevos').hide();
+ });
 
-/*  $('#TableReynerNuevos').hide();
-  $('#reynerNuevos').on('click', () => {
-    $('#TableJaycobNuevos').hide();
-    $('#TableJesusNuevos').hide();
-    $('#TableReynerNuevos').toggle('slow', );
-  });
+$('#TableJaycobNuevos').hide();
+$('#jaycobNuevos').on('click', () => {
+ $("#TableJaycobNuevos td").parent().remove();
+  setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
+  CargarAnimeJaycob().then(response => { AgregarAnimeJaycob(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)      }).catch(function(){
+      setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
+  setTimeout(function(){ $('#TableJaycobNuevos').show('slow', );  }, 2000);
+$('#TableReynerNuevos').hide();
+$('#TableJesusNuevos').hide();
+});
 
-  $('#TableJaycobNuevos').hide();
-  $('#jaycobNuevos').on('click', () => {
-    $('#TableReynerNuevos').hide();
-    $('#TableJesusNuevos').hide();
-    $('#TableJaycobNuevos').toggle('slow', );
-  });
 
-  $('#TableJesusNuevos').hide();
-  $('#jesusNuevos').on('click', () => {
-    $('#TableReynerNuevos').hide();
-    $('#TableJaycobNuevos').hide();
-    $('#TableJesusNuevos').toggle('slow', );
-  }); */
+$('#TableJesusNuevos').hide();
+$('#jesusNuevos').on('click', () => {
+  $("#TableJesusNuevos td").parent().remove();
+    setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
+    CargarAnimeJesus().then(response => { AgregarAnimeJesus(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
+        setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)
+      });
+    setTimeout(function(){ $('#TableJesusNuevos').show('slow', );  }, 2000);
+ $('#TableJaycobNuevos').hide();
+ $('#TableReynerNuevos').hide();
+});
+
+
+
 
 </script>
 
