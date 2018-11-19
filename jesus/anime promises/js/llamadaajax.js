@@ -40,6 +40,24 @@ function CargarAnimeReyner() {
 }
 
 
+function CargarAnimeJaycob() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+        type: "GET",
+        url: "http://192.168.100.54/AutoPag/php/animes.json",
+        datatype: "json",
+        success: function(response) {
+
+          resolve(response);
+        },
+        error: function(error) {
+            toastr["error"]("No se logró cargar!", "Error!")
+            reject();
+        }
+    });
+  });
+}
+
 
 
 
@@ -72,6 +90,26 @@ function AgregarAnimeReyner(response){
   }
     else {
       $('#TableReynerNuevos').append('<tr>'+
+      '<td align="center" style="dislay: none;" >' +
+      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+  }
+}
+}
+
+
+
+function AgregarAnimeJaycob(response){
+   var datos=response;
+  for(i = 0; i < datos.length; i++){
+    if (datos[i].label == "Populares"){
+      $('#TableJaycob').append('<tr>'+
+      '<td align="center" style="dislay: none;" >' +
+      '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+       datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+  }
+    else {
+      $('#TableJaycobNuevos').append('<tr>'+
       '<td align="center" style="dislay: none;" >' +
       '<img class=" imgAjax" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
        datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
