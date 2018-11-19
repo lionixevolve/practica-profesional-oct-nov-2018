@@ -172,10 +172,11 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
     $('#TableReyner').hide();
      $('#reyner').on('click', () => {
+      $("#TableReyner td").parent().remove();
        setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Reyner"); }, 0);
        CargarAnimeReyner().then(response => { AgregarAnimeReyner(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
            setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-       setTimeout(function(){ $('#TableReyner').toggle('slow', );  }, 2000);
+       setTimeout(function(){ $('#TableReyner').show('slow', );  }, 2000);
        $('#TableJaycob').hide();
        $('#TableJesus').hide();
      });
@@ -183,10 +184,11 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
   $('#TableJaycob').hide();
    $('#jaycob').on('click', () => {
+     $("#TableJaycob td").parent().remove();
       setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jaycob"); }, 0);
       CargarAnimeJaycob().then(response => { AgregarAnimeJaycob(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)      }).catch(function(){
           setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)});
-      setTimeout(function(){ $('#TableJaycob').toggle('slow', );  }, 2000);
+      setTimeout(function(){ $('#TableJaycob').show('slow', );  }, 2000);
     $('#TableReyner').hide();
     $('#TableJesus').hide();
   });
@@ -196,6 +198,7 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
     $('#TableJesus').hide();
     $('#jesus').on('click', () => {
+      $("#TableJesus td").parent().remove();
         setTimeout(function(){ toastr["success"]("Espere", "Cargando JSON Jesus"); }, 0);
         CargarAnimeJesus().then(response => { AgregarAnimeJesus(response); setTimeout(function(){ toastr["success"]("Cargado!", "Cargado Correctamente"); }, 2000)     }).catch(function(){
             setTimeout(function(){ toastr["error"]("No se logró cargar!", "Error!"); }, 2000)
