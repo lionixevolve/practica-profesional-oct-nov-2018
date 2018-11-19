@@ -2,7 +2,7 @@
 // Reyner  http://192.168.100.51/proyectos/reyner/react/anime-info/src/animes2.json
 //jaycob   http://192.168.100.62/AutoPag/php/animes.json
 // jesus   http://192.168.100.58/anime%20jquery/listaDeAnimes.json
-toastr.options.timeOut = '2500';
+toastr.options.timeOut = '2000';
 
 function CargarAnimeJesus() {
   return new Promise((resolve, reject) => {
@@ -15,7 +15,6 @@ function CargarAnimeJesus() {
           resolve(response);
         },
         error: function(error) {
-            toastr["error"]("No se logró cargar!", "Error!")
             reject();
         }
     });
@@ -32,7 +31,6 @@ function CargarAnimeReyner() {
           resolve(response);
         },
         error: function() {
-            toastr["error"]("No se logró cargar!", "Error!")
             reject();
         }
     });
@@ -51,7 +49,6 @@ function CargarAnimeJaycob() {
           resolve(response);
         },
         error: function(error) {
-            toastr["error"]("No se logró cargar!", "Error!")
             reject();
         }
     });
@@ -96,7 +93,6 @@ function AgregarAnimeReyner(response){
   }
 }
 }
-
 
 
 function AgregarAnimeJaycob(response){
