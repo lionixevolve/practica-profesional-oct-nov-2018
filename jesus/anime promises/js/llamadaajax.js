@@ -102,6 +102,13 @@ function CargarTodos(){
 
 
 
+
+
+
+
+
+
+
 //Separados
 function CargarAnimeJesus() {
   return new Promise((resolve, reject) => {
@@ -115,20 +122,20 @@ function CargarAnimeJesus() {
                if (datos[i].label == "Populares"){
                      $('#Tableall').append('<tr>'+
                      '<td align="center" style="dislay: none;" >' +
-                     '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-                      datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+                     '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  +
+                     '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>' + '</td>' + '</tr>' + '<br><br>')
                     }
                else if (datos[i].label == "Nuevos") {
-                   $('#TableallNuevos').append('<tr>'+
-                   '<td align="center" style="dislay: none;" >' +
-                   '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
-                    datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+                   $('#TableallNuevos').append('<tr>'+ '<td align="center" style="dislay: none;" >' + '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  +
+                   '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
               } else {
-
+                $('#animes').append('<div id="otros">' + '<section class="main row">' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<h2 class="text-center">' + datos[i].label + ':</h2>' + '<br>' + '</article>' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<br>' + '</article>' + '</section>' + '<div id="otroslista"  class="table-responsive">' + '<table id="TableOtros" cellspacing="20" cellpadding="30">' + '</table>' + '</div>' + '</div>');
+                $('#TableOtros').append('<tr>'+ '<td align="center" style="dislay: none;" >' +
+                '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
               }
            }
            toastr["success"]("Se logró cargar correctamente!", "Cargado!")
-          resolve(response);
+           resolve(response);
         }, //debe cerrar el succes
         error: function(error) {
           toastr["error"]("No se logró cargar!", "Error!")
