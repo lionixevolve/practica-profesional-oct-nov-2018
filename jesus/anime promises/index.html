@@ -171,15 +171,22 @@ géneros y hay un sin fin de historias, ¡Aventúrate a conocer increíbles hist
 
 <script>
 
+$('#todos').on('click', () => {
+  $("#Tableall td").parent().remove();
+  $("#TableallNuevos td").parent().remove();
+    CargarTodos();
+  });
+
      $('#reyner').on('click', () => {
        $("#Tableall td").parent().remove();
        $("#TableallNuevos td").parent().remove();
          CargarAnimeReyner();
      });
 
-
    $('#jaycob').on('click', () => {
-
+     $("#Tableall td").parent().remove();
+     $("#TableallNuevos td").parent().remove();
+      CargarAnimeJaycob();
 
   });
 

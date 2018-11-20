@@ -3,8 +3,107 @@
 //jaycob   http://192.168.100. /AutoPag/php/animes.json
 // jesus   http://192.168.100. /anime%20jquery/listaDeAnimes.json
 toastr.options.positionClass = 'toast-bottom-right',
-toastr.options.timeOut = '2000';
+toastr.options.timeOut = '2500';
 
+
+function CargarTodos(){
+  return new Promise((resolve, reject) => {
+    $.ajax({
+        type: "GET",
+        url: "http://192.168.100.51/anime%20jquery/listaDeAnimes.json",
+        datatype: "json",
+        success: function(response) {
+          var datos=response;
+          for(i = 0; i < datos.length; i++){
+               if (datos[i].label == "Populares"){
+                 $('#Tableall').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+               else {
+                 $('#TableallNuevos').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+           }
+           toastr["success"]("Se logró cargar correctamente!", "Cargado JSON Jesus")
+          resolve(response);
+        }, //debe cerrar el succes
+        error: function(error) {
+          toastr["error"]("No se logró cargar JSON Jesus", "Error!")
+            reject();
+        }
+    }); //ajax jesus
+
+    $.ajax({
+        type: "GET",
+        url: "http://192.168.100.53/proyectos/reyner/react/anime-info/src/animes2.json",
+        datatype: "json",
+        success: function(response) {
+          var datos=response;
+          for(i = 0; i < datos.length; i++){
+               if (datos[i].label == "Populares"){
+                 $('#Tableall').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+               else {
+                 $('#TableallNuevos').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+           }
+           toastr["success"]("Se logró cargar correctamente!", "Cargado JSON Reyner")
+          resolve(response);
+        }, //debe cerrar el succes
+        error: function(error) {
+          toastr["error"]("No se logró cargar JSON Reyner", "Error!")
+            reject();
+        }
+    });//ajax reyner
+
+    $.ajax({
+        type: "GET",
+        url: "http://192.168.100.54/AutoPag/php/animes.json",
+        datatype: "json",
+        success: function(response) {
+          var datos=response;
+          for(i = 0; i < datos.length; i++){
+               if (datos[i].label == "Populares"){
+                 $('#Tableall').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+               else {
+                 $('#TableallNuevos').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+           }
+           toastr["success"]("Se logró cargar correctamente!", "Cargado JSON Jaycob!")
+          resolve(response);
+        },
+        error: function(error) {
+          toastr["error"]("No se logró cargar JSON Jaycob!", "Error!")
+            reject();
+        }
+    });
+
+
+  });
+
+}
+
+
+
+
+//Separados
 function CargarAnimeJesus() {
   return new Promise((resolve, reject) => {
     $.ajax({
@@ -80,7 +179,22 @@ function CargarAnimeJaycob() {
         url: "http://192.168.100.54/AutoPag/php/animes.json",
         datatype: "json",
         success: function(response) {
-
+          var datos=response;
+          for(i = 0; i < datos.length; i++){
+               if (datos[i].label == "Populares"){
+                 $('#Tableall').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+               else {
+                 $('#TableallNuevos').append('<tr>'+
+                 '<td align="center" style="dislay: none;" >' +
+                 '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' +
+                  datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+             }
+           }
+           toastr["success"]("Se logró cargar correctamente!", "Cargado!")
           resolve(response);
         },
         error: function(error) {
