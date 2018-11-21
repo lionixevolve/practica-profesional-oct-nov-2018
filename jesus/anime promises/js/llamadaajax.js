@@ -128,10 +128,6 @@ function CargarAnimeJesus() {
                else if (datos[i].label == "Nuevos") {
                    $('#TableallNuevos').append('<tr>'+ '<td align="center" style="dislay: none;" >' + '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  +
                    '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
-              } else {
-                $('#animes').append('<div id="otros">' + '<section class="main row">' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<h2 class="text-center">' + datos[i].label + ':</h2>' + '<br>' + '</article>' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<br>' + '</article>' + '</section>' + '<div id="otroslista"  class="table-responsive">' + '<table id="TableOtros" cellspacing="20" cellpadding="30">' + '</table>' + '</div>' + '</div>');
-                $('#TableOtros').append('<tr>'+ '<td align="center" style="dislay: none;" >' +
-                '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
               }
            }
            toastr["success"]("Se logró cargar correctamente!", "Cargado!")
@@ -232,24 +228,11 @@ for(i = 0; i < datos.length; i++){
 }
 
 
-$('#animes').append('<div id="otros">'+ '<section class="main row>"' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' +
-'<h2 class="text-center">' + datos[i].label + '</h2>' + '</article>' + '<article class=class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' +
-'</article>' + '</article>' + '<div id="otros" class="table-responsive">' + '<table id="TableOtros" cellspacing="20" cellpadding="30">' +
-'</table>' + '</div>' + '</div>')
-
-$('#animes').append('<div id="otros">'+
-'<section class="main row>"' +
-'<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' +
-'<h2 class="text-center">' + datos[i].label + '</h2>' +
-'</article>' +
-'<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' +
-'</article>' +
-'</section>' +
-'<div id="otros" class="table-responsive">' +
-'<table id="TableOtros" cellspacing="20" cellpadding="30">' +
-'</table>' +
-'</div>' +
-'</div>')
-
+Este si xd
+} else {
+  $('#animes').append('<div id="otros">' + '<section class="main row">' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<h2 class="text-center">' + datos[i].label + ':</h2>' + '<br>' + '</article>' + '<article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">' + '<br>' + '</article>' + '</section>' + '<div id="otroslista"  class="table-responsive">' + '<table id="TableOtros" cellspacing="20" cellpadding="30">' + '</table>' + '</div>' + '</div>');
+  $('#TableOtros').append('<tr>'+ '<td align="center" style="dislay: none;" >' +
+  '<img class=" imgAjax img-fluid" src="'  + datos[i].src + '">' + '<h6>' + datos[i].title + '</h6>' + datos[i].description  + '<br><br>' + ' <button type="button" class="btn btn-primary bg-info">Ver más</button>'  + '</td>' + '</tr>' + '<br><br>')
+}
 
 */
