@@ -9,7 +9,7 @@ function CargarTodos(){
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.51/anime%20promises/listaDeAnimes.json",
+        url: "http://192.168.100.53/anime%20promises/listaDeAnimes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -32,13 +32,13 @@ function CargarTodos(){
         }, //debe cerrar el succes
         error: function(error) {
           toastr["error"]("No se logró cargar JSON Jesus", "Error!")
-            reject();
+            reject(error);
         }
     }); //ajax jesus
 
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.53/proyectos/reyner/react/anime-info/src/animes2.json",
+        url: "http://192.168.100.54/proyectos/reyner/react/anime-info/src/animes2.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -61,13 +61,13 @@ function CargarTodos(){
         }, //debe cerrar el succes
         error: function(error) {
           toastr["error"]("No se logró cargar JSON Reyner", "Error!")
-            reject();
+            reject(error);
         }
     });//ajax reyner
 
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.54/AutoPag/php/animes.json",
+        url: "http://192.168.100.56/AutoPag/php/animes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -90,7 +90,7 @@ function CargarTodos(){
         },
         error: function(error) {
           toastr["error"]("No se logró cargar JSON Jaycob!", "Error!")
-            reject();
+            reject(error);
         }
     });
 
@@ -114,7 +114,7 @@ function CargarAnimeJesus() {
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.51/anime%20promises/listaDeAnimes.json",
+        url: "http://192.168.100.53/anime%20promises/listaDeAnimes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -139,7 +139,7 @@ function CargarAnimeJesus() {
         }, //debe cerrar el succes
         error: function(error) {
           toastr["error"]("No se logró cargar!", "Error!")
-            reject();
+            reject(error);
         }
     });
   });
@@ -150,7 +150,7 @@ function CargarAnimeReyner() {
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.53/proyectos/reyner/react/anime-info/src/animes2.json",
+        url: "http://192.168.100.54/proyectos/reyner/react/anime-info/src/animes2.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -173,7 +173,7 @@ function CargarAnimeReyner() {
         }, //debe cerrar el succes
         error: function(error) {
           toastr["error"]("No se logró cargar!", "Error!")
-            reject();
+            reject(error);
         }
     });
   });
@@ -184,7 +184,7 @@ function CargarAnimeJaycob() {
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.54/AutoPag/php/animes.json",
+        url: "http://192.168.100.56/AutoPag/php/animes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -207,7 +207,7 @@ function CargarAnimeJaycob() {
         },
         error: function(error) {
           toastr["error"]("No se logró cargar!", "Error!")
-            reject();
+            reject(error);
         }
     });
   });
