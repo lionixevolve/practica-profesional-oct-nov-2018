@@ -5,10 +5,11 @@ export const AgregarAnime = () => {
     <div id="agregar">
       <div id="lista" className="relleno"></div>
       <body>
+
                   <div className="container">
                   <h1>A grega un nuvo anime</h1>
 
-                  <form className="" action="guardar.php" method="POST">
+                  <form className="" action="../php/guardar.php" method="POST">
                     <div className="form-group row">
                       <label for="name" className="col-sm-2 col-form-label">Nombre del anime</label>
                       <div className="col-sm-10">
