@@ -165,3 +165,7 @@ body{
   width: 350px;
   margin-bottom: 10px;
 }
+
+.dropdown{
+  color: #6A90BB !important;
+}

@@ -5,9 +5,16 @@ export const Footer = () => {
   return (
     <div className="card footer">
       <div className="card-body">
-        <h5>Opciones</h5>
+      <h5>Desea agregar animes?</h5>
         <hr />
-        <p>- Agregar nuevo anime <Link to="/agregar" id="agregarAnime" className="btn btn-info text-white" data-toggle="tooltip" data-placement="top" title="Agregar un nuevo anime"><span className="fi-cloud-upload" aria-hidden="true"></span></Link></p>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle" type="button" id="opcionesAnimes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Opciones
+          </button>
+          <div class="dropdown-menu" aria-labelledby="opcionesAnimes">
+            <Link to="/agregar" class="dropdown-item">Agregar Anime</Link>
+          </div>
+        </div>
       </div>
     </div>
   );
