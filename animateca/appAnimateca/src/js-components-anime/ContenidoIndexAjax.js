@@ -4,6 +4,10 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
+import toastr from 'toastr';
+
+toastr.options.timeOut = '1250';
+toastr.options.positionClass = 'toast-bottom-left';
 
 export class ContenidoIndexAjax extends Component{
   constructor(props){
@@ -14,17 +18,35 @@ export class ContenidoIndexAjax extends Component{
   }
 
   componentWillMount(){
-    $.ajax({
-      method: "GET",
-      url: "http://192.168.100.53/proyectos/animateca/appAnimateca/src/animes.json",
-      dataType: "json",
-      success: function(respuesta) {
-        this.setState({
-          items: respuesta
-        })
-      }.bind(this)
-    });
+    new Promise((resolve, reject) => {
+      $.ajax({
+        method: "GET",
+        url: "http://192.168.100.54/proyectos/animateca/appAnimateca/src/animes.json",
+        dataType: "json",
+        success: function(respuesta) {
+          setTimeout( function(){ toastr["info"]("Cargando") }, 0)
+          setTimeout( function(){ toastr["success"]("Cargado con éxito"); }, 1750)
+          resolve(this.setState({
+            items: respuesta
+          }))
+        }.bind(this),
+        error: function(){
+          toastr.options.timeOut = '2500';
+          reject(toastr["error"]("Error 404 Not Found"))
+        }
+      });
+    })
   };
+
+  componentDidMount(){
+    $('#listaP').hide()
+    $('#listaN').hide()
+
+    setTimeout(function(){
+      $('#listaP').show()
+      $('#listaN').show()
+    }, 1750)
+  }
 
   render(){
     var animes = this.state.items;
@@ -61,11 +83,11 @@ export class ContenidoIndexAjax extends Component{
       <div>
         <Lista />
         <Populares />
-        <div className="row">
+        <div id="listaP" className="row">
           {listaPopulares}
         </div>
         <Nuevos />
-        <div className="row">
+        <div id="listaN" className="row">
           {listaNuevos}
         </div>
       </div>
