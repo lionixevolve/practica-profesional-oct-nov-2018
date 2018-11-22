@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export const AgregarAnime = () => {
   return (
     <div id="agregar">
       <div id="lista" className="relleno"></div>
         <div className="container">
-        <h1>Agrega un nuevo anime</h1>
+        <h1><h5><Link to="/" id="atrasAgregar" className="badge badge-dark mt-2 text-white" data-toggle="tooltip" data-placement="top" title="Volver a la pagina anterior"><span className="fi-arrow-left" aria-hidden="true"></span></Link></h5>Agrega un nuevo anime</h1>
 
         <form className="" action="guardar.php" method="POST">
           <div className="form-group row">

@@ -25,7 +25,7 @@ export class ContenidoIndexAjax extends Component{
         dataType: "json",
         success: function(respuesta) {
           setTimeout( function(){ toastr["info"]("Cargando") }, 0)
-          setTimeout( function(){ toastr["success"]("Cargado con éxito"); }, 1750)
+          setTimeout( function(){ toastr["success"]("Cargado con éxito"); }, 1000)
           resolve(this.setState({
             items: respuesta
           }))
@@ -45,7 +45,7 @@ export class ContenidoIndexAjax extends Component{
     setTimeout(function(){
       $('#listaP').show()
       $('#listaN').show()
-    }, 1750)
+    }, 1000)
   }
 
   render(){
