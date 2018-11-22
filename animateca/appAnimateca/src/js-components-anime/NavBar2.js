@@ -9,11 +9,16 @@ export const NavBar2 = (props) => {
         <Opciones href="#nuevos" title="Nuevos"/>
       </ul>
     );
-  } else {
+  } else if (props.estado === "Naruto"){
     return (
       <ul className="nav nav-pills">
         <Opciones href="#informacion" title="Informacion"/>
       </ul>
+    );
+  } else {
+    return (
+      <div>
+      </div>
     );
   }
 }
