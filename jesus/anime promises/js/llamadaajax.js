@@ -10,7 +10,7 @@ function CargarTodos(){
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.53/PaginaPractica2018/jesus/anime%20promises/listaDeAnimes.json",
+        url: "http://192.168.100.57/PaginaPractica2018/jesus/anime%20promises/listaDeAnimes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
@@ -115,7 +115,7 @@ function CargarAnimeJesus() {
   return new Promise((resolve, reject) => {
     $.ajax({
         type: "GET",
-        url: "http://192.168.100.53/PaginaPractica2018/jesus/anime%20promises/listaDeAnimes.json",
+        url: "http://192.168.100.57/PaginaPractica2018/jesus/anime%20promises/listaDeAnimes.json",
         datatype: "json",
         success: function(response) {
           var datos=response;
