@@ -21,7 +21,7 @@ export class ContenidoIndexAjax extends Component{
     new Promise((resolve, reject) => {
       $.ajax({
         method: "GET",
-        url: "http://192.168.100.54/proyectos/animateca/appAnimateca/src/animes.json",
+        url: "http://192.168.24.97/proyectos/animateca/appAnimateca/src/animes.json",
         dataType: "json",
         success: function(respuesta) {
           setTimeout( function(){ toastr["info"]("Cargando") }, 0)
