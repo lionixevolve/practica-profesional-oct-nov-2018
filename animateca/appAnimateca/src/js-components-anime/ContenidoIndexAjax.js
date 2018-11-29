@@ -6,8 +6,7 @@ import { Lista } from './Lista';
 import $ from 'jquery';
 import toastr from 'toastr';
 
-toastr.options.timeOut = '1250';
-toastr.options.positionClass = 'toast-bottom-left';
+
 
 export class ContenidoIndexAjax extends Component{
   constructor(props){
@@ -18,24 +17,16 @@ export class ContenidoIndexAjax extends Component{
   }
 
   componentWillMount(){
-    new Promise((resolve, reject) => {
-      $.ajax({
-        method: "GET",
-        url: "http://192.168.24.97/proyectos/animateca/appAnimateca/src/animes.json",
-        dataType: "json",
-        success: function(respuesta) {
-          setTimeout( function(){ toastr["info"]("Cargando") }, 0)
-          setTimeout( function(){ toastr["success"]("Cargado con éxito"); }, 1000)
-          resolve(this.setState({
-            items: respuesta
-          }))
-        }.bind(this),
-        error: function(){
-          toastr.options.timeOut = '2500';
-          reject(toastr["error"]("Error 404 Not Found"))
-        }
-      });
-    })
+    $.ajax({
+      method: "GET",
+      url: "http://192.168.100.51/proyectos/animateca/appAnimateca/src/animes.json",
+      dataType: "json",
+      success: function(respuesta) {
+        this.setState({
+          items: respuesta
+        })
+      }.bind(this),
+    });
   };
 
   componentDidMount(){
