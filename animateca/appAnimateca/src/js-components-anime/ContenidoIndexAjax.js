@@ -45,8 +45,8 @@ export class ContenidoIndexAjax extends Component{
   render(){
     var animesReyner = this.state.itemsReyner
     var animesJesus = this.state.itemsJesus
-    var animes = animesReyner.concat(animesJesus)
- console.log(animes)
+    var animes = animesJesus.concat(animesReyner)
+
     animes.map((anime) => {
       anime.src = anime.name_value_list.src_c.value;
       anime.alt = anime.name_value_list.alt_c.value;
@@ -59,8 +59,6 @@ export class ContenidoIndexAjax extends Component{
       delete anime.module_name;
       return anime;
     });
-
-    console.log(animes)
 
     var cantidad = animes.length;
     var listaNuevos = [];
