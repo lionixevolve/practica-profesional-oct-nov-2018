@@ -48,15 +48,14 @@ export class ContenidoIndexAjax extends Component{
     var animes = animesJesus.concat(animesReyner)
 
     animes.map((anime) => {
-      anime.src = anime.name_value_list.src_c.value;
-      anime.alt = anime.name_value_list.alt_c.value;
-      anime.title = anime.name_value_list.name.value;
-      anime.description = anime.name_value_list.description.value;
-      anime.label = anime.name_value_list.category_c.value;
-      anime.moreinfo = anime.name_value_list.moreinfo_c.value;
-      delete anime.name_value_list;
-      delete anime.id;
-      delete anime.module_name;
+      anime.src = anime.name_value_list.src_c.value
+      anime.alt = anime.name_value_list.alt_c.value
+      anime.title = anime.name_value_list.name.value
+      anime.description = anime.name_value_list.description.value
+      anime.label = anime.name_value_list.category_c.value
+      anime.moreinfo = anime.name_value_list.moreinfo_c.value
+      delete anime.id
+      delete anime.module_name
       return anime;
     });
 
