@@ -4,7 +4,7 @@ import { Nuevos } from './Nuevos';
 import { Populares } from './Populares';
 import { Lista } from './Lista';
 import $ from 'jquery';
-import toastr from 'toastr';
+
 
 
 
@@ -39,6 +39,8 @@ export class ContenidoIndexAjax extends Component{
         })
       }.bind(this)
     });
+
+
   };
 
   render(){
@@ -54,7 +56,7 @@ export class ContenidoIndexAjax extends Component{
       anime.label = anime.name_value_list.category_c.value
       anime.moreinfo = anime.name_value_list.moreinfo_c.value
       delete anime.id
-      delete anime.module_name
+      delete anime.module_names
       return anime;
     });
 
