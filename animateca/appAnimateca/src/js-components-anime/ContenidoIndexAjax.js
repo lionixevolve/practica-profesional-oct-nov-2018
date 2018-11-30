@@ -39,7 +39,7 @@ export class ContenidoIndexAjax extends Component{
       anime.description = anime.name_value_list.description.value;
       anime.label = anime.name_value_list.category_c.value;
       anime.moreinfo = anime.name_value_list.moreinfo_c.value;
-      anime.name_value_list.deleted();
+      anime.name_value_list;
       return anime;
     });
 
