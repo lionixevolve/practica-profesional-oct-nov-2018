@@ -8,7 +8,7 @@ export const AgregarAnime = () => {
         <div className="container">
         <h1><h5><Link to="/" id="atrasAgregar" className="badge badge-dark mt-2 text-white" data-toggle="tooltip" data-placement="top" title="Volver a la pagina anterior"><span className="fi-arrow-left" aria-hidden="true"></span></Link></h5>Agrega un nuevo anime</h1>
 
-        <form className="" action="../php/guardar.php" method="POST">
+        <form className="" action="../php/save.php" method="POST">
           <div className="form-group row">
             <label for="name" className="col-sm-2 col-form-label">Nombre del anime</label>
             <div className="col-sm-10">
