@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavBar } from './NavBar';
-import { ContenidoIndexNode } from './ContenidoIndexNode';
+//import { ContenidoIndexNode } from './ContenidoIndexNode';
 import { ContenidoIndexAjax } from './ContenidoIndexAjax';
-import { ContenidoIndexHOF } from './ContenidoIndexHOF';
-import { ContenidoIndexAjaxHOF} from './ContenidoIndexAjaxHOF';
+//import { ContenidoIndexHOF } from './ContenidoIndexHOF';
+//import { ContenidoIndexAjaxHOF} from './ContenidoIndexAjaxHOF';
 import { Footer } from './Footer';
 
 export const Indice = () =>{
