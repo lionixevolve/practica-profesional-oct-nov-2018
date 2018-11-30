@@ -13,7 +13,8 @@ export class ContenidoIndexAjax extends Component{
     super(props);
     this.state = {
     itemsReyner: [],
-    itemsJesus: []
+    itemsJesus: [],
+    itemsJaycob: []
     };
   }
 
@@ -40,12 +41,22 @@ export class ContenidoIndexAjax extends Component{
       }.bind(this)
     });
 
-
+    $.ajax({
+      method: "GET",
+      url: "http://192.168.100.55/AutoPag/php/jsongenerator.php",
+      dataType: "json",
+      success: function(respuesta) {
+        this.setState({
+          itemsJaycob: respuesta
+        })
+      }.bind(this)
+    });
   };
 
   render(){
     var animesReyner = this.state.itemsReyner
     var animesJesus = this.state.itemsJesus
+    var animesJaycob = this.state.itemsJaycob
     var animes = animesJesus.concat(animesReyner)
 
     animes.map((anime) => {
@@ -59,6 +70,8 @@ export class ContenidoIndexAjax extends Component{
       delete anime.module_names
       return anime;
     });
+
+    animes = animes.concat(animesJaycob)
 
     var cantidad = animes.length;
     var listaNuevos = [];
